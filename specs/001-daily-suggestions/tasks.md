@@ -146,11 +146,11 @@
 
 ### Implementation for User Story 3
 
-- [ ] T046 [P] [US3] Create state machine transitions in `src/composables/useMessageIndex.ts`: COMING_SOON (dayIndex < 0) → UNLOCKED (0 ≤ dayIndex ≤ 364) → COMPLETED (dayIndex > 364) per data-model.md state machine
-- [ ] T047 [US3] Create `src/pages/completed.vue` (completion screen) displaying message like "You've completed your 365-day journey. Thank you for joining us." with no further message updates per spec.md User Story 3 acceptance scenario 3 and data-model.md COMPLETED state
-- [ ] T048 [P] [US3] Implement route guards in `src/middleware/journeyState.ts` or page <script> setup logic: if state === COMPLETED, route to completed.vue; if state === COMING_SOON, route to coming-soon.vue; if state === UNLOCKED, route to index.vue per data-model.md state transitions
-- [ ] T049 [US3] Update `src/pages/index.vue` to validate that no UI controls for message selection, skipping, or replay exist (accessibility audit confirms this per spec.md FR-004 and acceptance scenario 1)
-- [ ] T050 [P] [US3] Create localStorage persistence in `src/services/journeyState.ts` saving lastSeenDate (informational, not enforcing; per clarification Q3 "trust users") to localStorage for user awareness of potential clock manipulation
+- [x] T046 [P] [US3] Create state machine transitions in `src/composables/useMessageIndex.ts`: COMING_SOON (dayIndex < 0) → UNLOCKED (0 ≤ dayIndex ≤ 364) → COMPLETED (dayIndex > 364) per data-model.md state machine
+- [x] T047 [US3] Create `src/pages/completed.vue` (completion screen) displaying message like "You've completed your 365-day journey. Thank you for joining us." with no further message updates per spec.md User Story 3 acceptance scenario 3 and data-model.md COMPLETED state
+- [x] T048 [P] [US3] Implement route guards in `src/middleware/journeyState.ts` or page <script> setup logic: if state === COMPLETED, route to completed.vue; if state === COMING_SOON, route to coming-soon.vue; if state === UNLOCKED, route to index.vue per data-model.md state transitions
+- [x] T049 [US3] Update `src/pages/index.vue` to validate that no UI controls for message selection, skipping, or replay exist (accessibility audit confirms this per spec.md FR-004 and acceptance scenario 1)
+- [x] T050 [P] [US3] Create localStorage persistence in `src/services/journeyState.ts` saving lastSeenDate (informational, not enforcing; per clarification Q3 "trust users") to localStorage for user awareness of potential clock manipulation
 - [ ] T051 [US3] Create edge case handler: if device date < startDate, show coming-soon page; if date === startDate and time < 06:00 AM, show placeholder or previous day's message per data-model.md edge cases EC-1/EC-2
 - [ ] T052 [P] [US3] Create timezone handling in `src/utils/dateCalculation.ts` using local device timezone exclusively (no server-side calculation) per data-model.md edge case EC-4 timezone change
 - [ ] T053 [US3] Add unit tests for edge cases in `tests/unit/edgeCases.test.ts`: before startDate, 5:59 AM on startDate, clock forward (localStorage tracking), timezone changes per data-model.md EC-1 through EC-4
@@ -163,15 +163,15 @@
 
 **Purpose**: Build, test, deploy, documentation, and final validation
 
-- [ ] T054 Create `vercel.json` deployment configuration for static site generation in repository root per plan.md frontend-only constraint
-- [ ] T055 [P] Create CI/CD workflow `.github/workflows/ci.yml` (GitHub Actions) running ESLint, Prettier, Vitest, Playwright on every PR per constitution.md development workflow
-- [ ] T056 [P] Update `package.json` with build scripts: `npm run dev` (dev server), `npm run build` (static generation), `npm run test` (Vitest), `npm run test:e2e` (Playwright), `npm run lint` (ESLint), `npm run format` (Prettier)
-- [ ] T057 [P] Create `tests/setup.ts` or `vitest.config.ts` with Vitest configuration, test utilities, date mocking helpers for testing time-sensitive logic
-- [ ] T058 Create README.md with project overview, setup instructions, feature summary, contribution guidelines per constitution.md code style
-- [ ] T059 [P] Populate 365 actual messages in `src/assets/messages.json` with emotionally supportive, motivational content for female students (or use placeholder template for demo)
-- [ ] T060 [P] Verify build: run `npm run build` and confirm `dist/` artifact is static (no Node.js runtime required) per plan.md static deployment constraint
+- [x] T054 Create `vercel.json` deployment configuration for static site generation in repository root per plan.md frontend-only constraint
+- [x] T055 [P] Create CI/CD workflow `.github/workflows/ci.yml` (GitHub Actions) running ESLint, Prettier, Vitest, Playwright on every PR per constitution.md development workflow
+- [x] T056 [P] Update `package.json` with build scripts: `npm run dev` (dev server), `npm run build` (static generation), `npm run test` (Vitest), `npm run test:e2e` (Playwright), `npm run lint` (ESLint), `npm run format` (Prettier)
+- [x] T057 [P] Create `tests/setup.ts` or `vitest.config.ts` with Vitest configuration, test utilities, date mocking helpers for testing time-sensitive logic
+- [x] T058 Create README.md with project overview, setup instructions, feature summary, contribution guidelines per constitution.md code style
+- [x] T059 [P] Populate 365 actual messages in `src/assets/messages.json` with emotionally supportive, motivational content for female students (or use placeholder template for demo)
+- [x] T060 [P] Verify build: run `npm run build` and confirm `dist/` artifact is static (no Node.js runtime required) per plan.md static deployment constraint
 - [ ] T061 Verify Vercel deployment: connect repository to Vercel, confirm automatic preview deploys on PRs and production deployment on merge to main per plan.md and constitution.md
-- [ ] T062 [P] Create `CONTRIBUTING.md` with branch naming (`feat/`, `fix/`), PR review requirements (1 maintainer for patches, 2 for major changes per constitution.md), semantic versioning guidance
+- [x] T062 [P] Create `CONTRIBUTING.md` with branch naming (`feat/`, `fix/`), PR review requirements (1 maintainer for patches, 2 for major changes per constitution.md), semantic versioning guidance
 - [ ] T063 Final validation: run full test suite (`npm run test && npm run test:e2e`), confirm all tests pass, all accessibility checks pass, all edge cases covered per spec.md SC-001 through SC-008
 
 **Checkpoint**: Project complete, tested, documented, deployed to Vercel, ready for production use

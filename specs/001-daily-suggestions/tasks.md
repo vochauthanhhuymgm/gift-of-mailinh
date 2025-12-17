@@ -32,14 +32,14 @@
 
 **Purpose**: Create project structure and install dependencies
 
-- [ ] T001 Initialize Nuxt 3 project with `npm init nuxi` in `d:\life-sugesstion-proj`
-- [ ] T002 Install dependencies: Nuxt 3, Vue 3, Vuetify 3, Vitest, Playwright, ESLint, Prettier via `npm install`
-- [ ] T003 [P] Create `.eslintrc.cjs` for code quality rules in repository root
-- [ ] T004 [P] Create `.prettierrc.json` for code formatting in repository root
-- [ ] T005 [P] Create `nuxt.config.ts` for Nuxt 3 configuration in repository root
-- [ ] T006 Create `.env.example` template with VITE_START_DATE, VITE_APP_NAME, VITE_UNLOCKED_HOUR, VITE_UNLOCKED_MINUTE in repository root
-- [ ] T007 Create `.gitignore` with node_modules, .nuxt, dist, .env.local in repository root
-- [ ] T008 Create directory structure: `src/pages`, `src/components`, `src/composables`, `src/services`, `src/assets`, `public`, `tests`
+- [x] T001 Initialize Nuxt 3 project with `npm init nuxi` in `d:\life-sugesstion-proj`
+- [x] T002 Install dependencies: Nuxt 3, Vue 3, Vuetify 3, Vitest, Playwright, ESLint, Prettier via `npm install`
+- [x] T003 [P] Create `.eslintrc.cjs` for code quality rules in repository root
+- [x] T004 [P] Create `.prettierrc.json` for code formatting in repository root
+- [x] T005 [P] Create `nuxt.config.ts` for Nuxt 3 configuration in repository root
+- [x] T006 Create `.env.example` template with VITE_START_DATE, VITE_APP_NAME, VITE_UNLOCKED_HOUR, VITE_UNLOCKED_MINUTE in repository root
+- [x] T007 Create `.gitignore` with node_modules, .nuxt, dist, .env.local in repository root
+- [x] T008 Create directory structure: `src/pages`, `src/components`, `src/composables`, `src/services`, `src/assets`, `public`, `tests`
 
 **Checkpoint**: Project structure ready; dependencies installed; can run `npm run dev`
 
@@ -51,17 +51,17 @@
 
 **⚠️ CRITICAL**: All tasks in this phase must complete before ANY user story implementation begins
 
-- [ ] T009 Create `src/composables/useDateLock.ts` with getCurrentDayIndex(), isMessageUnlocked(), getStartDate(), hasJourneyStarted(), hasJourneyCompleted() per contracts/openapi.yaml
-- [ ] T010 [P] Create `src/services/messageService.ts` with loadMessages(), getMessageByIndex(), getMessageCount(), validateMessages() per contracts/openapi.yaml
-- [ ] T011 [P] Create `src/composables/useMessageIndex.ts` composable returning currentMessage, state, dayIndex, refresh per contracts/openapi.yaml
-- [ ] T012 [P] Create `src/assets/messages.json` with 365 message objects (id 0-364, content, author, theme, createdAt) per data-model.md entity schema
-- [ ] T013 [P] Create `src/config.ts` with appName, unlockedHour, unlockedMinute, messageMinLength, messageMaxLength per data-model.md Configuration entity
-- [ ] T014 Create `src/utils/dateCalculation.ts` with dayIndex calculation formula `Math.floor((currentDate - startDate) / (1000 * 60 * 60 * 24))` per data-model.md line 208
-- [ ] T015 [P] Create `.env.local` with VITE_START_DATE=2025-12-18, VITE_APP_NAME="Daily Life Suggestions", VITE_UNLOCKED_HOUR=6, VITE_UNLOCKED_MINUTE=0
-- [ ] T016 Create validation function `src/utils/validateMessages.ts` ensuring all 365 messages present, content non-empty, id in range [0,364], theme in predefined list per data-model.md validation rules
-- [ ] T017 Create `src/types/index.ts` with TypeScript interfaces for Message, Configuration, AppState per contracts/openapi.yaml types
-- [ ] T018 [P] Create `src/stores/appState.ts` (if using Pinia) or reactive ref pattern to hold currentMessage, dayIndex, state (COMING_SOON|UNLOCKED|COMPLETED) per data-model.md state machine
-- [ ] T019 Create global CSS file `src/assets/styles/global.css` with WCAG AA accessible base styles, soft color palette (per User Story P2 calm aesthetic), typography rules per spec.md FR-005/007
+- [x] T009 Create `src/composables/useDateLock.ts` with getCurrentDayIndex(), isMessageUnlocked(), getStartDate(), hasJourneyStarted(), hasJourneyCompleted() per contracts/openapi.yaml
+- [x] T010 [P] Create `src/services/messageService.ts` with loadMessages(), getMessageByIndex(), getMessageCount(), validateMessages() per contracts/openapi.yaml
+- [x] T011 [P] Create `src/composables/useMessageIndex.ts` composable returning currentMessage, state, dayIndex, refresh per contracts/openapi.yaml
+- [x] T012 [P] Create `src/assets/messages.json` with 365 message objects (id 0-364, content, author, theme, createdAt) per data-model.md entity schema
+- [x] T013 [P] Create `src/config.ts` with appName, unlockedHour, unlockedMinute, messageMinLength, messageMaxLength per data-model.md Configuration entity
+- [x] T014 Create `src/utils/dateCalculation.ts` with dayIndex calculation formula `Math.floor((currentDate - startDate) / (1000 * 60 * 60 * 24))` per data-model.md line 208
+- [x] T015 [P] Create `.env.local` with VITE_START_DATE=2025-12-18, VITE_APP_NAME="Daily Life Suggestions", VITE_UNLOCKED_HOUR=6, VITE_UNLOCKED_MINUTE=0
+- [x] T016 Create validation function `src/utils/validateMessages.ts` ensuring all 365 messages present, content non-empty, id in range [0,364], theme in predefined list per data-model.md validation rules
+- [x] T017 Create `src/types/index.ts` with TypeScript interfaces for Message, Configuration, AppState per contracts/openapi.yaml types
+- [x] T018 [P] Create `src/stores/appState.ts` (if using Pinia) or reactive ref pattern to hold currentMessage, dayIndex, state (COMING_SOON|UNLOCKED|COMPLETED) per data-model.md state machine
+- [x] T019 Create global CSS file `src/assets/styles/global.css` with WCAG AA accessible base styles, soft color palette (per User Story P2 calm aesthetic), typography rules per spec.md FR-005/007
 
 **Checkpoint**: Foundation ready — useMessageIndex, useDateLock, messageService all functional; messages.json loaded; date calculation working; state management ready
 
@@ -85,13 +85,13 @@
 
 ### Implementation for User Story 1
 
-- [ ] T024 [P] [US1] Create `src/pages/index.vue` (home page) with <template> displaying currentMessage.content, <script> using useMessageIndex composable, <style> scoped minimal layout per spec.md FR-004 (no message selection controls)
-- [ ] T025 [US1] Implement automatic message refresh logic in `src/composables/useMessageIndex.ts` setting timer to refresh message at next 6:00 AM transition per spec.md acceptance scenario 4
-- [ ] T026 [P] [US1] Create `src/components/MessageDisplay.vue` component rendering message with emotional tone, respecting prefers-reduced-motion per spec.md FR-006 (optional <500ms animations if reduced-motion disabled)
-- [ ] T027 [P] [US1] Create `src/composables/useAnimation.ts` composable for fade-in/slide animations with duration ≥500ms per spec.md SC-005 (gentle, unhurried perception)
-- [ ] T028 [US1] Update `src/pages/index.vue` to use MessageDisplay component and useAnimation for message reveal per spec.md FR-005 (calm, minimal context)
-- [ ] T029 [P] [US1] Create responsive layout in `src/layouts/default.vue` with mobile-first design, message centered, minimal chrome per spec.md FR-005 and quickstart.md guide
-- [ ] T030 [P] [US1] Implement accessibility in MessageDisplay: semantic HTML (<main>, <article>), keyboard navigation, aria-live region if message updates via JS per spec.md FR-007 WCAG AA
+- [x] T024 [P] [US1] Create `src/pages/index.vue` (home page) with <template> displaying currentMessage.content, <script> using useMessageIndex composable, <style> scoped minimal layout per spec.md FR-004 (no message selection controls)
+- [x] T025 [US1] Implement automatic message refresh logic in `src/composables/useMessageIndex.ts` setting timer to refresh message at next 6:00 AM transition per spec.md acceptance scenario 4
+- [x] T026 [P] [US1] Create `src/components/MessageDisplay.vue` component rendering message with emotional tone, respecting prefers-reduced-motion per spec.md FR-006 (optional <500ms animations if reduced-motion disabled)
+- [x] T027 [P] [US1] Create `src/composables/useAnimation.ts` composable for fade-in/slide animations with duration ≥500ms per spec.md SC-005 (gentle, unhurried perception)
+- [x] T028 [US1] Update `src/pages/index.vue` to use MessageDisplay component and useAnimation for message reveal per spec.md FR-005 (calm, minimal context)
+- [x] T029 [P] [US1] Create responsive layout in `src/layouts/default.vue` with mobile-first design, message centered, minimal chrome per spec.md FR-005 and quickstart.md guide
+- [x] T030 [P] [US1] Implement accessibility in MessageDisplay: semantic HTML (<main>, <article>), keyboard navigation, aria-live region if message updates via JS per spec.md FR-007 WCAG AA
 - [ ] T031 [US1] Add unit test for useAnimation composable in `tests/unit/useAnimation.test.ts` verifying animation duration ≥500ms unless reduced-motion enabled per spec.md SC-005
 - [ ] T032 [US1] Create E2E test variant in `tests/e2e/userJourney.spec.ts` simulating time travel (before startDate, day 0, day 100, day 365+) and verifying correct message displays per data-model.md edge cases
 

@@ -5,6 +5,14 @@
 **Status**: Draft  
 **Input**: User description: "Build a front-end web application that delivers one daily life-healing suggestion over a 365-day journey. Each message is designed to emotionally support, encourage, and help the reader start her day positively."
 
+## Clarifications
+
+### Session 2025-12-17
+
+- Q: What happens after day 365 is completed? → A: Show Completion Screen (app displays a completion message on day 366+ and stops showing new messages)
+- Q: What should the app display before startDate begins? → A: "Coming Soon" Screen (display placeholder like "Your journey begins on [startDate]"; do not preview the first message)
+- Q: How should the app prevent clock-forward attacks? → A: Trust Users (no active prevention mechanism; rely on localStorage-based tracking for awareness only)
+
 ## User Scenarios & Testing *(mandatory)*
 
 <!--
@@ -63,15 +71,15 @@ As a long-term user, I experience the full 365-day journey over the course of a 
 
 1. **Given** user has been using the app for 50 days, **When** they look for a button or menu to select messages, **Then** no such control exists (message selection is purely date-based).
 2. **Given** today is day 100 of the journey, **When** user attempts to view day 101's message before 6:00 AM tomorrow, **Then** the message is not available (they see today's message or a placeholder).
-3. **Given** user has completed all 365 days, **When** they open the app on day 366, **Then** the app either (a) cycles to day 1 again with a notification, or (b) shows a completion message and informs the user what happens next.
+3. **Given** user has completed all 365 days, **When** they open the app on day 366, **Then** the app displays a completion message (e.g., "You've completed your 365-day journey. Thank you for joining us.") and continues to show this message on subsequent visits.
 ---
 
 [Add more user stories as needed, each with an assigned priority]
 
 ### Edge Cases
 
-- **What happens when user's device date is before startDate?** App should display an initial state (e.g., "Coming soon on [startDate]") or the first message (index 0) as a preview/teaser.
-- **What happens when a user manually sets their device clock forward to access future messages?** The app MUST NOT allow this; it shows the message for the actual current date (re-validate against server time or device timezone info at load time).
+- **What happens when user's device date is before startDate?** App displays a "Coming Soon" screen (e.g., "Your 365-day journey begins on [startDate]. Get ready for daily inspiration at 6:00 AM!") with no message preview or content. Users cannot see the first message until 6:00 AM on startDate.
+- **What happens when a user manually sets their device clock forward to access future messages?** The app shows the message corresponding to their device's current date (trusts the device clock). No active prevention mechanism is implemented. The app may track the "last seen date" in localStorage for user awareness but does not enforce time validation.
 - **What happens at exactly 6:00 AM when the day changes?** The message transitions smoothly (via gentle animation) to the new day's message. If a user is actively viewing at this moment, they see the transition; if offline, the next message appears when they next open/refresh.
 - **What happens if a user has a timezone offset that wraps around midnight?** Local device time is used; 6:00 AM is interpreted in the user's device timezone, not UTC or a fixed timezone.
 - **What if a user clears their browser cache or reinstalls the app?** The app re-downloads or re-builds the message array and immediately shows the current day's message (no data is stored locally about which messages have been seen).

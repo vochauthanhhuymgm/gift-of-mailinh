@@ -1,0 +1,302 @@
+# API Contracts: Daily Life-Healing Suggestions
+
+**Phase**: 1 (Design)  
+**Date**: 2025-12-17  
+**Format**: OpenAPI 3.0.3 (for documentation; no runtime server)
+
+## Overview
+
+This app is **frontend-only** with no backend API server. All data is static and bundled at build time. This document defines the **internal interfaces** (composables, services) that fetch and provide messages to components, as well as the structure of static assets (JSON).
+
+---
+
+## Internal Service Interfaces
+
+### 1. Message Service
+
+**Purpose**: Load and provide 365 messages from the static JSON bundle.
+
+#### Interface: `messageService.ts`
+
+```typescript
+interface MessageService {
+  /**
+   * Load all 365 messages from messages.json
+   * Called once at app startup
+   * Returns: Promise<Message[]>
+   */
+  loadMessages(): Promise<Message[]>;
+
+  /**
+   * Get a single message by index
+   * Args: index (0-364)
+   * Returns: Message | undefined (if index out of bounds)
+   */
+  getMessageByIndex(index: number): Message | undefined;
+
+  /**
+   * Get total count of messages (should always be 365)
+   */
+  getMessageCount(): number;
+
+  /**
+   * Validate that all 365 messages are present
+   * Returns: { isValid: boolean; errors: string[] }
+   */
+  validateMessages(): { isValid: boolean; errors: string[] };
+}
+```
+
+#### Message Type
+
+```typescript
+interface Message {
+  id: number;           // 0-364
+  content: string;      // Main message text
+  author?: string;      // Optional author/credit
+  theme?: string;       // Optional theme category
+  createdAt?: string;   // ISO 8601 date (audit trail)
+}
+```
+
+---
+
+### 2. Date Lock Service
+
+**Purpose**: Validate current date against startDate and determine current message index.
+
+#### Interface: `useDateLock.ts`
+
+```typescript
+interface DateLock {
+  /**
+   * Get the current day index (0-364+)
+   * Returns: number (can be negative if before startDate, or >364 if after completion)
+   */
+  getCurrentDayIndex(): number;
+
+  /**
+   * Check if the current time has unlocked today's message (>= 06:00 AM local)
+   * Returns: boolean
+   */
+  isMessageUnlocked(): boolean;
+
+  /**
+   * Get the startDate configuration
+   * Returns: Date
+   */
+  getStartDate(): Date;
+
+  /**
+   * Check if the journey has started (current date >= startDate)
+   * Returns: boolean
+   */
+  hasJourneyStarted(): boolean;
+
+  /**
+   * Check if the journey has completed (current date > startDate + 365 days)
+   * Returns: boolean
+   */
+  hasJourneyCompleted(): boolean;
+
+  /**
+   * Get human-readable date when journey completes (startDate + 365 days)
+   * Returns: string (ISO 8601 or formatted date)
+   */
+  getCompletionDate(): string;
+
+  /**
+   * Get time remaining until next unlock (at 06:00 AM tomorrow)
+   * Returns: { hours: number; minutes: number; seconds: number }
+   */
+  getTimeUntilNextUnlock(): { hours: number; minutes: number; seconds: number };
+}
+```
+
+---
+
+### 3. Message Index Composable
+
+**Purpose**: Combine date logic with message service to provide the current message and state.
+
+#### Interface: `useMessageIndex.ts`
+
+```typescript
+interface MessageIndexComposable {
+  /**
+   * The current message to display (reactive)
+   */
+  currentMessage: Ref<Message | undefined>;
+
+  /**
+   * Current state: 'coming-soon' | 'unlocked' | 'completed'
+   */
+  state: Ref<'coming-soon' | 'unlocked' | 'completed'>;
+
+  /**
+   * Current day index (0-364+)
+   */
+  dayIndex: Ref<number>;
+
+  /**
+   * Is the message unlocked right now?
+   */
+  isUnlocked: Ref<boolean>;
+
+  /**
+   * Human-readable message like "Day 5 of 365" or "Journey Complete"
+   */
+  statusText: Ref<string>;
+
+  /**
+   * Refresh message and state (called on page load, at transitions)
+   */
+  refresh(): void;
+
+  /**
+   * Subscribe to state changes (e.g., when 6:00 AM passes)
+   * Useful for triggering animations or notifications
+   */
+  onStateChange(callback: (state: 'coming-soon' | 'unlocked' | 'completed') => void): () => void;
+}
+```
+
+---
+
+## Static Asset Schemas
+
+### 4. messages.json
+
+**Path**: `public/data/messages.json` or bundled in `assets/`
+
+**Schema**:
+
+```json
+{
+  "messages": [
+    {
+      "id": 0,
+      "content": "You are capable of amazing things. Take one small step today.",
+      "author": "Sarah",
+      "theme": "self-care",
+      "createdAt": "2025-12-01"
+    },
+    ...
+    {
+      "id": 364,
+      "content": "You have grown. Celebrate every step of your journey.",
+      "author": "Unknown",
+      "theme": "gratitude",
+      "createdAt": "2025-12-31"
+    }
+  ]
+}
+```
+
+**Validation Rules**:
+- Must contain exactly 365 messages (IDs 0-364).
+- All `content` fields must be non-empty strings.
+- No duplicate IDs.
+- File size should be <100 KB (uncompressed).
+
+---
+
+### 5. Configuration
+
+**Path**: `nuxt.config.ts` or `.env` or `config.json`
+
+**Schema**:
+
+```javascript
+{
+  startDate: '2025-12-18',          // ISO 8601
+  appName: 'Daily Life Suggestions',
+  appDescription: '365 days of emotional healing',
+  unlockedHour: 6,                  // 6 AM
+  unlockedMinute: 0,
+  unlockedSeconds: 0,               // Optional
+  timezone: 'local',                // 'local' or 'UTC'
+  messageMinLength: 20,             // Validation
+  messageMaxLength: 500,            // Validation
+  supportEmail: 'support@example.com',
+  privacyPolicy: 'https://...'
+}
+```
+
+---
+
+## Error Handling Contract
+
+### Scenarios & Responses
+
+| Scenario | HTTP Status / State | Response |
+|----------|---------------------|----------|
+| messages.json fails to load | Error state | Show error page: "Unable to load messages. Please refresh." |
+| Day index calculation fails (e.g., invalid date) | Error state | Show error page: "Date calculation error. Please check device time." |
+| Out-of-bounds message request (index > 364) | Graceful | Return undefined; component displays completion message. |
+| Missing configuration | Build-time error | Build fails; dev must provide .env or config. |
+| Empty messages.json | Build-time error | Validation fails; build fails; must provide 365 messages. |
+
+---
+
+## Performance Contracts
+
+| Metric | Target | Test |
+|--------|--------|------|
+| Initial page load time | <3 seconds on 4G | Lighthouse, WebPageTest |
+| messages.json load time | <500ms | Network tab analysis |
+| Message index calculation | <1ms | Unit test with timer |
+| Animation duration | ≥500ms | Manual inspection, Playwright |
+| Animations on `prefers-reduced-motion` | <100ms or removed | Browser devtools + CSS inspection |
+
+---
+
+## Security & Privacy Contracts
+
+| Requirement | Implementation |
+|-------------|-----------------|
+| No data collection | No fetch() calls to third-party services; no localStorage of user ID or timestamps (except "last seen date" for UX warning only) |
+| No authentication | No login, no auth tokens, no user accounts |
+| No cookies or tracking | No cookies set (except session cookies from Vercel if needed); no analytics libraries |
+| No secrets in source | All secrets (if any) loaded from .env at build time; .gitignore includes .env |
+| Privacy policy | Link to privacy policy (if app has one); should state "This app collects no personal data" |
+
+---
+
+## Accessibility Contracts
+
+| Standard | Implementation |
+|----------|-----------------|
+| WCAG AA text contrast | ≥4.5:1 for normal text; ≥3:1 for large text |
+| Keyboard navigation | All interactive elements reachable via Tab and Enter |
+| Screen reader support | Semantic HTML; ARIA labels where needed; no empty headings |
+| Reduced motion support | `prefers-reduced-motion: reduce` respected; animations disabled or <100ms |
+| Font size | Body text ≥16px; line-height ≥1.5 |
+| Color contrast test | Use tools like WebAIM, Axe, or Lighthouse |
+
+---
+
+## Deployment Contract
+
+| Item | Requirement |
+|------|-------------|
+| Build command | `nuxi generate` produces static artifact in `dist/` |
+| Deployment target | Vercel, Netlify, or any CDN supporting static HTML |
+| Environment variables | `VITE_START_DATE`, `VITE_APP_NAME`, etc. (prefixed with `VITE_` for client-side access) |
+| Cache headers | Static assets cache for 1 year; HTML cache for 0 (no-cache) to ensure updates |
+| Redirects | None needed (single-page, no routing outside of Nuxt) |
+| Error pages | 404 redirects to `/index.html` (standard SPA behavior) |
+
+---
+
+## Summary
+
+All contracts are **internal** (no external API). The app is self-contained and deployable as a static artifact. Tests should verify that:
+
+1. `messageService` loads 365 messages correctly.
+2. `useDateLock` calculates day indices correctly (including edge cases).
+3. `useMessageIndex` combines both and reflects correct state transitions.
+4. Static assets (messages.json, config) validate at build time.
+5. Animations respect `prefers-reduced-motion`.
+6. WCAG AA accessibility standards are met.
+

@@ -66,33 +66,31 @@ useHead({
   align-items: center;
   justify-content: center;
   padding: var(--spacing-lg);
-  background: linear-gradient(
-    135deg,
-    var(--color-background) 0%,
-    var(--color-card) 100%
-  );
+  background: transparent;
 }
 
 .coming-soon-container {
   width: 100%;
   max-width: 600px;
-  background-color: var(--color-card);
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.15) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: var(--spacing-xl);
   border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   text-align: center;
 }
 
 .coming-soon-title {
   font-size: var(--font-size-3xl);
-  color: var(--color-primary);
+  color: #a78bfa;
   margin-bottom: var(--spacing-md);
   font-weight: 600;
 }
 
 .coming-soon-subtitle {
   font-size: var(--font-size-lg);
-  color: var(--color-text);
+  color: #e0e7ff;
   margin-bottom: var(--spacing-xl);
   font-weight: 500;
 }

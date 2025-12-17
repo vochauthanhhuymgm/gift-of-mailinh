@@ -82,7 +82,14 @@ const dayIndex = computed(() => props.dayIndex);
 }
 
 .message-card {
-  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+  background: linear-gradient(135deg, 
+    rgba(247, 240, 255, 0.8) 0%,
+    rgba(235, 248, 255, 0.8) 50%,
+    rgba(255, 245, 235, 0.8) 100%
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(123, 104, 238, 0.15) !important;
 }
 
 .message-content {
@@ -96,7 +103,7 @@ const dayIndex = computed(() => props.dayIndex);
 
 .message-text {
   line-height: 1.75 !important;
-  color: rgb(var(--v-theme-on-surface));
+  color: #ffffff;
   max-width: 100%;
   word-wrap: break-word;
 }

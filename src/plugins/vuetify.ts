@@ -3,72 +3,27 @@ import 'vuetify/styles';
 import { createVuetify } from 'vuetify';
 import * as components from 'vuetify/components';
 import * as directives from 'vuetify/directives';
+import { aliases, mdi } from 'vuetify/iconsets/mdi';
 
-// Custom calm theme for emotional healing
+// Define the custom dark theme
 const calmTheme = {
-  dark: false,
+  dark: true, // Set dark theme as default
   colors: {
-    // Primary: Soft purple (calming, spiritual)
-    primary: '#7b68ee',
-    'primary-darken-1': '#6a5acd',
-    'primary-lighten-1': '#9d8ef7',
-    
-    // Secondary: Soft blue (peaceful, trust)
-    secondary: '#89cff0',
-    'secondary-darken-1': '#6bb6d9',
-    'secondary-lighten-1': '#a8dff7',
-    
-    // Accent: Warm peach (friendly, approachable)
-    accent: '#ffd4a3',
-    'accent-darken-1': '#ffc070',
-    'accent-lighten-1': '#ffe4c4',
-    
-    // Neutral backgrounds
-    background: '#fafafa',
-    surface: '#ffffff',
-    
-    // Text colors
-    'on-primary': '#ffffff',
-    'on-secondary': '#000000',
-    'on-background': '#2c3e50',
-    'on-surface': '#2c3e50',
-    
-    // Semantic colors (soft, non-alarming)
-    error: '#ff6b6b',
-    warning: '#ffa726',
-    info: '#89cff0',
-    success: '#81c784',
-  },
-};
-
-// Dark mode theme (optional)
-const calmDarkTheme = {
-  dark: true,
-  colors: {
-    primary: '#9d8ef7',
-    'primary-darken-1': '#7b68ee',
-    'primary-lighten-1': '#b5a7ff',
-    
-    secondary: '#6bb6d9',
-    'secondary-darken-1': '#5aa5c8',
-    'secondary-lighten-1': '#89cff0',
-    
-    accent: '#ffc070',
-    'accent-darken-1': '#ffb347',
-    'accent-lighten-1': '#ffd4a3',
-    
-    background: '#1a1a1a',
-    surface: '#2d2d2d',
-    
-    'on-primary': '#ffffff',
-    'on-secondary': '#000000',
+    background: '#1a1a2e', // Dark blue-purple from global.css
+    surface: '#2c2c44', // A slightly lighter surface for cards/dialogs
+    primary: '#8e7dff', // Bright lavender from global.css
+    'primary-darken-1': '#7a6ad9',
+    secondary: '#c651cd', // Orchid from global.css
+    'secondary-darken-1': '#ab47b2',
+    error: '#ff5252',
+    info: '#2196f3',
+    success: '#4caf50',
+    warning: '#ffc107',
+    // Text colors for readability on dark surfaces
     'on-background': '#e0e0e0',
-    'on-surface': '#e0e0e0',
-    
-    error: '#ff6b6b',
-    warning: '#ffa726',
-    info: '#89cff0',
-    success: '#81c784',
+    'on-surface': '#ffffff',
+    'on-primary': '#ffffff',
+    'on-secondary': '#ffffff',
   },
 };
 
@@ -77,35 +32,16 @@ export default defineNuxtPlugin((nuxtApp) => {
     components,
     directives,
     theme: {
-      defaultTheme: 'calmLight',
+      defaultTheme: 'calmTheme', // Use the custom theme
       themes: {
-        calmLight: calmTheme,
-        calmDark: calmDarkTheme,
-      },
-      variations: {
-        colors: ['primary', 'secondary', 'accent'],
-        lighten: 3,
-        darken: 3,
+        calmTheme,
       },
     },
-    defaults: {
-      VBtn: {
-        variant: 'flat',
-        rounded: 'lg',
-        elevation: 0,
-      },
-      VCard: {
-        variant: 'elevated',
-        rounded: 'lg',
-        elevation: 2,
-      },
-      VTextField: {
-        variant: 'outlined',
-        rounded: 'lg',
-      },
-      VAlert: {
-        variant: 'tonal',
-        rounded: 'lg',
+    icons: {
+      defaultSet: 'mdi',
+      aliases,
+      sets: {
+        mdi,
       },
     },
     display: {

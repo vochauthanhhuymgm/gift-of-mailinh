@@ -1,27 +1,56 @@
 <template>
   <article class="message-display" role="main">
-    <div class="message-content">
-      <!-- Message text with semantic markup -->
-      <p class="message-text" v-if="message">{{ message.content }}</p>
+    <v-card
+      class="message-card elevation-4"
+      rounded="xl"
+      :loading="isLoading"
+    >
+      <v-card-text class="message-content pa-8">
+        <!-- Message text with semantic markup -->
+        <p class="message-text text-h5 font-weight-medium" v-if="message">
+          {{ message.content }}
+        </p>
 
-      <!-- Loading state -->
-      <div v-else-if="isLoading" class="message-loading" aria-live="polite" aria-busy="true">
-        <p>Loading your daily message...</p>
-      </div>
+        <!-- Loading state -->
+        <div v-else-if="isLoading" class="message-loading" aria-live="polite" aria-busy="true">
+          <v-progress-circular
+            indeterminate
+            color="primary"
+            size="64"
+            class="mb-4"
+          ></v-progress-circular>
+          <p class="text-body-1 text-medium-emphasis">Loading your daily message...</p>
+        </div>
 
-      <!-- Error state -->
-      <div v-else-if="error" class="message-error" role="alert">
-        <p>{{ error }}</p>
-      </div>
+        <!-- Error state -->
+        <v-alert
+          v-else-if="error"
+          type="error"
+          variant="tonal"
+          rounded="lg"
+          class="message-error"
+          role="alert"
+        >
+          {{ error }}
+        </v-alert>
 
-      <!-- Author attribution if provided -->
-      <p v-if="message?.author" class="message-author">— {{ message.author }}</p>
+        <!-- Author attribution if provided -->
+        <p v-if="message?.author" class="message-author text-body-2 text-medium-emphasis font-italic mt-6">
+          — {{ message.author }}
+        </p>
 
-      <!-- Day counter -->
-      <p v-if="dayIndex >= 0 && dayIndex < 365" class="day-counter">
-        Day {{ dayIndex + 1 }} of 365
-      </p>
-    </div>
+        <!-- Day counter -->
+        <v-chip
+          v-if="dayIndex >= 0 && dayIndex < 365"
+          class="day-counter mt-6"
+          color="primary"
+          variant="tonal"
+          size="small"
+        >
+          Day {{ dayIndex + 1 }} of 365
+        </v-chip>
+      </v-card-text>
+    </v-card>
   </article>
 </template>
 
@@ -48,6 +77,12 @@ const dayIndex = computed(() => props.dayIndex);
 <style scoped>
 .message-display {
   width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.message-card {
+  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
 }
 
 .message-content {
@@ -55,63 +90,35 @@ const dayIndex = computed(() => props.dayIndex);
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--spacing-lg);
-  padding: var(--spacing-lg);
-  background-color: var(--color-card);
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-md);
   min-height: 300px;
   text-align: center;
 }
 
 .message-text {
-  font-size: var(--font-size-xl);
-  line-height: var(--line-height-relaxed);
-  color: var(--color-text);
-  font-weight: 500;
+  line-height: 1.75 !important;
+  color: rgb(var(--v-theme-on-surface));
   max-width: 100%;
   word-wrap: break-word;
-
-  /* WCAG AA contrast: 4.5:1+ */
-  contrast: 1;
 }
 
 .message-author {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-light);
-  font-style: italic;
-  margin-top: var(--spacing-md);
+  margin-top: 1.5rem;
 }
 
 .day-counter {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-light);
-  margin-top: var(--spacing-md);
-  margin-bottom: 0;
+  margin-top: 1.5rem;
 }
 
-.message-loading,
-.message-error {
+.message-loading {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 200px;
 }
 
-.message-loading p {
-  color: var(--color-text-light);
-}
-
 .message-error {
-  background-color: rgba(255, 0, 0, 0.05);
-  border-left: 4px solid #ff6b6b;
-  padding: var(--spacing-md);
-  border-radius: var(--border-radius-md);
-}
-
-.message-error p {
-  color: #d32f2f;
-  font-weight: 500;
+  width: 100%;
 }
 
 /* Animation for message reveal */
@@ -126,39 +133,31 @@ const dayIndex = computed(() => props.dayIndex);
   }
 }
 
-.message-content {
-  animation: fadeIn var(--transition-slow) ease-out;
+.message-card {
+  animation: fadeIn 0.6s ease-out;
 }
 
-/* Respect reduced-motion preference */
 @media (prefers-reduced-motion: reduce) {
-  .message-content {
+  .message-card {
     animation: none;
   }
 }
 
-/* Responsive design */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .message-content {
-    padding: var(--spacing-md);
     min-height: 250px;
   }
-
+  
   .message-text {
-    font-size: var(--font-size-lg);
+    font-size: 1.25rem !important;
   }
 }
 
-/* Mobile small screens */
 @media (max-width: 480px) {
-  .message-content {
-    padding: var(--spacing-sm);
-    min-height: 200px;
-    gap: var(--spacing-md);
-  }
-
   .message-text {
-    font-size: var(--font-size-base);
+    font-size: 1.125rem !important;
   }
 }
 </style>
+

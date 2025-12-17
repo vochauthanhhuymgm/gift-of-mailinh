@@ -33,5 +33,13 @@ export default defineNuxtConfig({
     typeCheck: false, // Disable during build to avoid checker issues
   },
   // CSS and styling
-  css: ['@/assets/styles/global.css'],
+  css: [
+    '@/assets/styles/global.css',
+    'vuetify/styles',
+    '@mdi/font/css/materialdesignicons.css',
+  ],
+  // Build optimizations
+  build: {
+    transpile: ['vuetify'],
+  },
 })

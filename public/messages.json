@@ -1,0 +1,2557 @@
+[
+  {
+    "id": 0,
+    "content": "You are capable of amazing things. Take one small step today.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2025-11-30"
+  },
+  {
+    "id": 1,
+    "content": "Self-care is not selfish. It's the most loving thing you can do for yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2025-12-01"
+  },
+  {
+    "id": 2,
+    "content": "Your struggles make you stronger. Every challenge is a lesson in disguise.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2025-12-02"
+  },
+  {
+    "id": 3,
+    "content": "Breathe. You are exactly where you need to be right now.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2025-12-03"
+  },
+  {
+    "id": 4,
+    "content": "Progress, not perfection. Every small win counts.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2025-12-04"
+  },
+  {
+    "id": 5,
+    "content": "You deserve kindness—especially from yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2025-12-05"
+  },
+  {
+    "id": 6,
+    "content": "Today is a chance to choose what makes you happy.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2025-12-06"
+  },
+  {
+    "id": 7,
+    "content": "Your feelings are valid. Honor them without judgment.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2025-12-07"
+  },
+  {
+    "id": 8,
+    "content": "You are stronger than you think.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2025-12-08"
+  },
+  {
+    "id": 9,
+    "content": "Take care of your mind. It carries you through everything.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2025-12-09"
+  },
+  {
+    "id": 10,
+    "content": "Small progress is still progress. Be proud.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2025-12-10"
+  },
+  {
+    "id": 11,
+    "content": "You have survived every difficult day so far.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2025-12-11"
+  },
+  {
+    "id": 12,
+    "content": "Your worth is not determined by your productivity.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2025-12-12"
+  },
+  {
+    "id": 13,
+    "content": "Be patient with yourself. Growth takes time.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2025-12-13"
+  },
+  {
+    "id": 14,
+    "content": "You are allowed to rest. You are allowed to slow down.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2025-12-14"
+  },
+  {
+    "id": 15,
+    "content": "Your past does not define your future.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2025-12-15"
+  },
+  {
+    "id": 16,
+    "content": "Embrace your uniqueness. The world needs your gifts.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2025-12-16"
+  },
+  {
+    "id": 17,
+    "content": "You are enough, just as you are.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2025-12-17"
+  },
+  {
+    "id": 18,
+    "content": "Every setback is a setup for a comeback.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2025-12-18"
+  },
+  {
+    "id": 19,
+    "content": "Your mental health matters. Prioritize it.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2025-12-19"
+  },
+  {
+    "id": 20,
+    "content": "You are not alone in this. Reach out when you need help.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2025-12-20"
+  },
+  {
+    "id": 21,
+    "content": "Today, choose compassion—for others and yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2025-12-21"
+  },
+  {
+    "id": 22,
+    "content": "You have the power to change your story.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2025-12-22"
+  },
+  {
+    "id": 23,
+    "content": "Rest is productive. Your body and mind need it.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2025-12-23"
+  },
+  {
+    "id": 24,
+    "content": "You are deserving of love, especially your own.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2025-12-24"
+  },
+  {
+    "id": 25,
+    "content": "Focus on what you can control. Let go of the rest.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2025-12-25"
+  },
+  {
+    "id": 26,
+    "content": "Your potential is limitless.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2025-12-26"
+  },
+  {
+    "id": 27,
+    "content": "Be kind to your future self.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2025-12-27"
+  },
+  {
+    "id": 28,
+    "content": "You are a work in progress, and that's beautiful.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2025-12-28"
+  },
+  {
+    "id": 29,
+    "content": "Your voice matters. Speak your truth.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2025-12-29"
+  },
+  {
+    "id": 30,
+    "content": "You are braver than you believe.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2025-12-30"
+  },
+  {
+    "id": 31,
+    "content": "Every day is a fresh start.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2025-12-31"
+  },
+  {
+    "id": 32,
+    "content": "You deserve to be happy.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-01-01"
+  },
+  {
+    "id": 33,
+    "content": "Trust yourself. You know what you need.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-01-02"
+  },
+  {
+    "id": 34,
+    "content": "Your dreams are worth pursuing.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-01-03"
+  },
+  {
+    "id": 35,
+    "content": "You are capable of creating the life you want.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-01-04"
+  },
+  {
+    "id": 36,
+    "content": "Be gentle with yourself on hard days.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-01-05"
+  },
+  {
+    "id": 37,
+    "content": "Your mental health is a priority, not a luxury.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-01-06"
+  },
+  {
+    "id": 38,
+    "content": "You have already overcome so much.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-01-07"
+  },
+  {
+    "id": 39,
+    "content": "Today, choose yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-01-08"
+  },
+  {
+    "id": 40,
+    "content": "You are not broken. You are healing.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-01-09"
+  },
+  {
+    "id": 41,
+    "content": "Your story is not over yet.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-01-10"
+  },
+  {
+    "id": 42,
+    "content": "Be patient. Great things take time.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-01-11"
+  },
+  {
+    "id": 43,
+    "content": "You are worthy of the space you take up.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-01-12"
+  },
+  {
+    "id": 44,
+    "content": "Your feelings are valid. All of them.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-01-13"
+  },
+  {
+    "id": 45,
+    "content": "You deserve to be celebrated.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-01-14"
+  },
+  {
+    "id": 46,
+    "content": "Progress is not linear, and that's okay.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-01-15"
+  },
+  {
+    "id": 47,
+    "content": "You are doing better than you think.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-01-16"
+  },
+  {
+    "id": 48,
+    "content": "Your potential is infinite.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-01-17"
+  },
+  {
+    "id": 49,
+    "content": "Be kind to yourself today.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-01-18"
+  },
+  {
+    "id": 50,
+    "content": "You are enough.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-01-19"
+  },
+  {
+    "id": 51,
+    "content": "You are capable of amazing things. Take one small step today.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-01-20"
+  },
+  {
+    "id": 52,
+    "content": "Self-care is not selfish. It's the most loving thing you can do for yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-01-21"
+  },
+  {
+    "id": 53,
+    "content": "Your struggles make you stronger. Every challenge is a lesson in disguise.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-01-22"
+  },
+  {
+    "id": 54,
+    "content": "Breathe. You are exactly where you need to be right now.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-01-23"
+  },
+  {
+    "id": 55,
+    "content": "Progress, not perfection. Every small win counts.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-01-24"
+  },
+  {
+    "id": 56,
+    "content": "You deserve kindness—especially from yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-01-25"
+  },
+  {
+    "id": 57,
+    "content": "Today is a chance to choose what makes you happy.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-01-26"
+  },
+  {
+    "id": 58,
+    "content": "Your feelings are valid. Honor them without judgment.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-01-27"
+  },
+  {
+    "id": 59,
+    "content": "You are stronger than you think.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-01-28"
+  },
+  {
+    "id": 60,
+    "content": "Take care of your mind. It carries you through everything.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-01-29"
+  },
+  {
+    "id": 61,
+    "content": "Small progress is still progress. Be proud.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-01-30"
+  },
+  {
+    "id": 62,
+    "content": "You have survived every difficult day so far.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-01-31"
+  },
+  {
+    "id": 63,
+    "content": "Your worth is not determined by your productivity.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-02-01"
+  },
+  {
+    "id": 64,
+    "content": "Be patient with yourself. Growth takes time.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-02-02"
+  },
+  {
+    "id": 65,
+    "content": "You are allowed to rest. You are allowed to slow down.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-02-03"
+  },
+  {
+    "id": 66,
+    "content": "Your past does not define your future.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-02-04"
+  },
+  {
+    "id": 67,
+    "content": "Embrace your uniqueness. The world needs your gifts.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-02-05"
+  },
+  {
+    "id": 68,
+    "content": "You are enough, just as you are.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-02-06"
+  },
+  {
+    "id": 69,
+    "content": "Every setback is a setup for a comeback.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-02-07"
+  },
+  {
+    "id": 70,
+    "content": "Your mental health matters. Prioritize it.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-02-08"
+  },
+  {
+    "id": 71,
+    "content": "You are not alone in this. Reach out when you need help.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-02-09"
+  },
+  {
+    "id": 72,
+    "content": "Today, choose compassion—for others and yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-02-10"
+  },
+  {
+    "id": 73,
+    "content": "You have the power to change your story.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-02-11"
+  },
+  {
+    "id": 74,
+    "content": "Rest is productive. Your body and mind need it.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-02-12"
+  },
+  {
+    "id": 75,
+    "content": "You are deserving of love, especially your own.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-02-13"
+  },
+  {
+    "id": 76,
+    "content": "Focus on what you can control. Let go of the rest.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-02-14"
+  },
+  {
+    "id": 77,
+    "content": "Your potential is limitless.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-02-15"
+  },
+  {
+    "id": 78,
+    "content": "Be kind to your future self.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-02-16"
+  },
+  {
+    "id": 79,
+    "content": "You are a work in progress, and that's beautiful.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-02-17"
+  },
+  {
+    "id": 80,
+    "content": "Your voice matters. Speak your truth.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-02-18"
+  },
+  {
+    "id": 81,
+    "content": "You are braver than you believe.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-02-19"
+  },
+  {
+    "id": 82,
+    "content": "Every day is a fresh start.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-02-20"
+  },
+  {
+    "id": 83,
+    "content": "You deserve to be happy.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-02-21"
+  },
+  {
+    "id": 84,
+    "content": "Trust yourself. You know what you need.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-02-22"
+  },
+  {
+    "id": 85,
+    "content": "Your dreams are worth pursuing.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-02-23"
+  },
+  {
+    "id": 86,
+    "content": "You are capable of creating the life you want.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-02-24"
+  },
+  {
+    "id": 87,
+    "content": "Be gentle with yourself on hard days.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-02-25"
+  },
+  {
+    "id": 88,
+    "content": "Your mental health is a priority, not a luxury.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-02-26"
+  },
+  {
+    "id": 89,
+    "content": "You have already overcome so much.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-02-27"
+  },
+  {
+    "id": 90,
+    "content": "Today, choose yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-02-28"
+  },
+  {
+    "id": 91,
+    "content": "You are not broken. You are healing.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-03-01"
+  },
+  {
+    "id": 92,
+    "content": "Your story is not over yet.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-03-02"
+  },
+  {
+    "id": 93,
+    "content": "Be patient. Great things take time.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-03-03"
+  },
+  {
+    "id": 94,
+    "content": "You are worthy of the space you take up.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-03-04"
+  },
+  {
+    "id": 95,
+    "content": "Your feelings are valid. All of them.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-03-05"
+  },
+  {
+    "id": 96,
+    "content": "You deserve to be celebrated.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-03-06"
+  },
+  {
+    "id": 97,
+    "content": "Progress is not linear, and that's okay.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-03-07"
+  },
+  {
+    "id": 98,
+    "content": "You are doing better than you think.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-03-08"
+  },
+  {
+    "id": 99,
+    "content": "Your potential is infinite.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-03-09"
+  },
+  {
+    "id": 100,
+    "content": "Be kind to yourself today.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-03-10"
+  },
+  {
+    "id": 101,
+    "content": "You are enough.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-03-11"
+  },
+  {
+    "id": 102,
+    "content": "You are capable of amazing things. Take one small step today.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-03-12"
+  },
+  {
+    "id": 103,
+    "content": "Self-care is not selfish. It's the most loving thing you can do for yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-03-13"
+  },
+  {
+    "id": 104,
+    "content": "Your struggles make you stronger. Every challenge is a lesson in disguise.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-03-14"
+  },
+  {
+    "id": 105,
+    "content": "Breathe. You are exactly where you need to be right now.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-03-15"
+  },
+  {
+    "id": 106,
+    "content": "Progress, not perfection. Every small win counts.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-03-16"
+  },
+  {
+    "id": 107,
+    "content": "You deserve kindness—especially from yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-03-17"
+  },
+  {
+    "id": 108,
+    "content": "Today is a chance to choose what makes you happy.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-03-18"
+  },
+  {
+    "id": 109,
+    "content": "Your feelings are valid. Honor them without judgment.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-03-19"
+  },
+  {
+    "id": 110,
+    "content": "You are stronger than you think.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-03-20"
+  },
+  {
+    "id": 111,
+    "content": "Take care of your mind. It carries you through everything.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-03-21"
+  },
+  {
+    "id": 112,
+    "content": "Small progress is still progress. Be proud.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-03-22"
+  },
+  {
+    "id": 113,
+    "content": "You have survived every difficult day so far.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-03-23"
+  },
+  {
+    "id": 114,
+    "content": "Your worth is not determined by your productivity.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-03-24"
+  },
+  {
+    "id": 115,
+    "content": "Be patient with yourself. Growth takes time.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-03-25"
+  },
+  {
+    "id": 116,
+    "content": "You are allowed to rest. You are allowed to slow down.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-03-26"
+  },
+  {
+    "id": 117,
+    "content": "Your past does not define your future.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-03-27"
+  },
+  {
+    "id": 118,
+    "content": "Embrace your uniqueness. The world needs your gifts.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-03-28"
+  },
+  {
+    "id": 119,
+    "content": "You are enough, just as you are.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-03-29"
+  },
+  {
+    "id": 120,
+    "content": "Every setback is a setup for a comeback.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-03-30"
+  },
+  {
+    "id": 121,
+    "content": "Your mental health matters. Prioritize it.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-03-31"
+  },
+  {
+    "id": 122,
+    "content": "You are not alone in this. Reach out when you need help.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-04-01"
+  },
+  {
+    "id": 123,
+    "content": "Today, choose compassion—for others and yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-04-02"
+  },
+  {
+    "id": 124,
+    "content": "You have the power to change your story.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-04-03"
+  },
+  {
+    "id": 125,
+    "content": "Rest is productive. Your body and mind need it.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-04-04"
+  },
+  {
+    "id": 126,
+    "content": "You are deserving of love, especially your own.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-04-05"
+  },
+  {
+    "id": 127,
+    "content": "Focus on what you can control. Let go of the rest.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-04-06"
+  },
+  {
+    "id": 128,
+    "content": "Your potential is limitless.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-04-07"
+  },
+  {
+    "id": 129,
+    "content": "Be kind to your future self.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-04-08"
+  },
+  {
+    "id": 130,
+    "content": "You are a work in progress, and that's beautiful.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-04-09"
+  },
+  {
+    "id": 131,
+    "content": "Your voice matters. Speak your truth.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-04-10"
+  },
+  {
+    "id": 132,
+    "content": "You are braver than you believe.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-04-11"
+  },
+  {
+    "id": 133,
+    "content": "Every day is a fresh start.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-04-12"
+  },
+  {
+    "id": 134,
+    "content": "You deserve to be happy.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-04-13"
+  },
+  {
+    "id": 135,
+    "content": "Trust yourself. You know what you need.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-04-14"
+  },
+  {
+    "id": 136,
+    "content": "Your dreams are worth pursuing.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-04-15"
+  },
+  {
+    "id": 137,
+    "content": "You are capable of creating the life you want.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-04-16"
+  },
+  {
+    "id": 138,
+    "content": "Be gentle with yourself on hard days.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-04-17"
+  },
+  {
+    "id": 139,
+    "content": "Your mental health is a priority, not a luxury.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-04-18"
+  },
+  {
+    "id": 140,
+    "content": "You have already overcome so much.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-04-19"
+  },
+  {
+    "id": 141,
+    "content": "Today, choose yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-04-20"
+  },
+  {
+    "id": 142,
+    "content": "You are not broken. You are healing.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-04-21"
+  },
+  {
+    "id": 143,
+    "content": "Your story is not over yet.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-04-22"
+  },
+  {
+    "id": 144,
+    "content": "Be patient. Great things take time.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-04-23"
+  },
+  {
+    "id": 145,
+    "content": "You are worthy of the space you take up.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-04-24"
+  },
+  {
+    "id": 146,
+    "content": "Your feelings are valid. All of them.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-04-25"
+  },
+  {
+    "id": 147,
+    "content": "You deserve to be celebrated.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-04-26"
+  },
+  {
+    "id": 148,
+    "content": "Progress is not linear, and that's okay.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-04-27"
+  },
+  {
+    "id": 149,
+    "content": "You are doing better than you think.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-04-28"
+  },
+  {
+    "id": 150,
+    "content": "Your potential is infinite.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-04-29"
+  },
+  {
+    "id": 151,
+    "content": "Be kind to yourself today.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-04-30"
+  },
+  {
+    "id": 152,
+    "content": "You are enough.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-05-01"
+  },
+  {
+    "id": 153,
+    "content": "You are capable of amazing things. Take one small step today.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-05-02"
+  },
+  {
+    "id": 154,
+    "content": "Self-care is not selfish. It's the most loving thing you can do for yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-05-03"
+  },
+  {
+    "id": 155,
+    "content": "Your struggles make you stronger. Every challenge is a lesson in disguise.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-05-04"
+  },
+  {
+    "id": 156,
+    "content": "Breathe. You are exactly where you need to be right now.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-05-05"
+  },
+  {
+    "id": 157,
+    "content": "Progress, not perfection. Every small win counts.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-05-06"
+  },
+  {
+    "id": 158,
+    "content": "You deserve kindness—especially from yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-05-07"
+  },
+  {
+    "id": 159,
+    "content": "Today is a chance to choose what makes you happy.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-05-08"
+  },
+  {
+    "id": 160,
+    "content": "Your feelings are valid. Honor them without judgment.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-05-09"
+  },
+  {
+    "id": 161,
+    "content": "You are stronger than you think.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-05-10"
+  },
+  {
+    "id": 162,
+    "content": "Take care of your mind. It carries you through everything.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-05-11"
+  },
+  {
+    "id": 163,
+    "content": "Small progress is still progress. Be proud.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-05-12"
+  },
+  {
+    "id": 164,
+    "content": "You have survived every difficult day so far.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-05-13"
+  },
+  {
+    "id": 165,
+    "content": "Your worth is not determined by your productivity.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-05-14"
+  },
+  {
+    "id": 166,
+    "content": "Be patient with yourself. Growth takes time.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-05-15"
+  },
+  {
+    "id": 167,
+    "content": "You are allowed to rest. You are allowed to slow down.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-05-16"
+  },
+  {
+    "id": 168,
+    "content": "Your past does not define your future.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-05-17"
+  },
+  {
+    "id": 169,
+    "content": "Embrace your uniqueness. The world needs your gifts.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-05-18"
+  },
+  {
+    "id": 170,
+    "content": "You are enough, just as you are.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-05-19"
+  },
+  {
+    "id": 171,
+    "content": "Every setback is a setup for a comeback.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-05-20"
+  },
+  {
+    "id": 172,
+    "content": "Your mental health matters. Prioritize it.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-05-21"
+  },
+  {
+    "id": 173,
+    "content": "You are not alone in this. Reach out when you need help.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-05-22"
+  },
+  {
+    "id": 174,
+    "content": "Today, choose compassion—for others and yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-05-23"
+  },
+  {
+    "id": 175,
+    "content": "You have the power to change your story.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-05-24"
+  },
+  {
+    "id": 176,
+    "content": "Rest is productive. Your body and mind need it.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-05-25"
+  },
+  {
+    "id": 177,
+    "content": "You are deserving of love, especially your own.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-05-26"
+  },
+  {
+    "id": 178,
+    "content": "Focus on what you can control. Let go of the rest.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-05-27"
+  },
+  {
+    "id": 179,
+    "content": "Your potential is limitless.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-05-28"
+  },
+  {
+    "id": 180,
+    "content": "Be kind to your future self.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-05-29"
+  },
+  {
+    "id": 181,
+    "content": "You are a work in progress, and that's beautiful.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-05-30"
+  },
+  {
+    "id": 182,
+    "content": "Your voice matters. Speak your truth.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-05-31"
+  },
+  {
+    "id": 183,
+    "content": "You are braver than you believe.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-06-01"
+  },
+  {
+    "id": 184,
+    "content": "Every day is a fresh start.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-06-02"
+  },
+  {
+    "id": 185,
+    "content": "You deserve to be happy.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-06-03"
+  },
+  {
+    "id": 186,
+    "content": "Trust yourself. You know what you need.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-06-04"
+  },
+  {
+    "id": 187,
+    "content": "Your dreams are worth pursuing.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-06-05"
+  },
+  {
+    "id": 188,
+    "content": "You are capable of creating the life you want.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-06-06"
+  },
+  {
+    "id": 189,
+    "content": "Be gentle with yourself on hard days.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-06-07"
+  },
+  {
+    "id": 190,
+    "content": "Your mental health is a priority, not a luxury.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-06-08"
+  },
+  {
+    "id": 191,
+    "content": "You have already overcome so much.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-06-09"
+  },
+  {
+    "id": 192,
+    "content": "Today, choose yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-06-10"
+  },
+  {
+    "id": 193,
+    "content": "You are not broken. You are healing.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-06-11"
+  },
+  {
+    "id": 194,
+    "content": "Your story is not over yet.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-06-12"
+  },
+  {
+    "id": 195,
+    "content": "Be patient. Great things take time.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-06-13"
+  },
+  {
+    "id": 196,
+    "content": "You are worthy of the space you take up.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-06-14"
+  },
+  {
+    "id": 197,
+    "content": "Your feelings are valid. All of them.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-06-15"
+  },
+  {
+    "id": 198,
+    "content": "You deserve to be celebrated.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-06-16"
+  },
+  {
+    "id": 199,
+    "content": "Progress is not linear, and that's okay.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-06-17"
+  },
+  {
+    "id": 200,
+    "content": "You are doing better than you think.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-06-18"
+  },
+  {
+    "id": 201,
+    "content": "Your potential is infinite.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-06-19"
+  },
+  {
+    "id": 202,
+    "content": "Be kind to yourself today.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-06-20"
+  },
+  {
+    "id": 203,
+    "content": "You are enough.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-06-21"
+  },
+  {
+    "id": 204,
+    "content": "You are capable of amazing things. Take one small step today.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-06-22"
+  },
+  {
+    "id": 205,
+    "content": "Self-care is not selfish. It's the most loving thing you can do for yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-06-23"
+  },
+  {
+    "id": 206,
+    "content": "Your struggles make you stronger. Every challenge is a lesson in disguise.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-06-24"
+  },
+  {
+    "id": 207,
+    "content": "Breathe. You are exactly where you need to be right now.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-06-25"
+  },
+  {
+    "id": 208,
+    "content": "Progress, not perfection. Every small win counts.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-06-26"
+  },
+  {
+    "id": 209,
+    "content": "You deserve kindness—especially from yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-06-27"
+  },
+  {
+    "id": 210,
+    "content": "Today is a chance to choose what makes you happy.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-06-28"
+  },
+  {
+    "id": 211,
+    "content": "Your feelings are valid. Honor them without judgment.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-06-29"
+  },
+  {
+    "id": 212,
+    "content": "You are stronger than you think.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-06-30"
+  },
+  {
+    "id": 213,
+    "content": "Take care of your mind. It carries you through everything.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-07-01"
+  },
+  {
+    "id": 214,
+    "content": "Small progress is still progress. Be proud.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-07-02"
+  },
+  {
+    "id": 215,
+    "content": "You have survived every difficult day so far.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-07-03"
+  },
+  {
+    "id": 216,
+    "content": "Your worth is not determined by your productivity.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-07-04"
+  },
+  {
+    "id": 217,
+    "content": "Be patient with yourself. Growth takes time.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-07-05"
+  },
+  {
+    "id": 218,
+    "content": "You are allowed to rest. You are allowed to slow down.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-07-06"
+  },
+  {
+    "id": 219,
+    "content": "Your past does not define your future.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-07-07"
+  },
+  {
+    "id": 220,
+    "content": "Embrace your uniqueness. The world needs your gifts.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-07-08"
+  },
+  {
+    "id": 221,
+    "content": "You are enough, just as you are.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-07-09"
+  },
+  {
+    "id": 222,
+    "content": "Every setback is a setup for a comeback.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-07-10"
+  },
+  {
+    "id": 223,
+    "content": "Your mental health matters. Prioritize it.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-07-11"
+  },
+  {
+    "id": 224,
+    "content": "You are not alone in this. Reach out when you need help.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-07-12"
+  },
+  {
+    "id": 225,
+    "content": "Today, choose compassion—for others and yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-07-13"
+  },
+  {
+    "id": 226,
+    "content": "You have the power to change your story.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-07-14"
+  },
+  {
+    "id": 227,
+    "content": "Rest is productive. Your body and mind need it.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-07-15"
+  },
+  {
+    "id": 228,
+    "content": "You are deserving of love, especially your own.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-07-16"
+  },
+  {
+    "id": 229,
+    "content": "Focus on what you can control. Let go of the rest.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-07-17"
+  },
+  {
+    "id": 230,
+    "content": "Your potential is limitless.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-07-18"
+  },
+  {
+    "id": 231,
+    "content": "Be kind to your future self.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-07-19"
+  },
+  {
+    "id": 232,
+    "content": "You are a work in progress, and that's beautiful.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-07-20"
+  },
+  {
+    "id": 233,
+    "content": "Your voice matters. Speak your truth.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-07-21"
+  },
+  {
+    "id": 234,
+    "content": "You are braver than you believe.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-07-22"
+  },
+  {
+    "id": 235,
+    "content": "Every day is a fresh start.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-07-23"
+  },
+  {
+    "id": 236,
+    "content": "You deserve to be happy.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-07-24"
+  },
+  {
+    "id": 237,
+    "content": "Trust yourself. You know what you need.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-07-25"
+  },
+  {
+    "id": 238,
+    "content": "Your dreams are worth pursuing.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-07-26"
+  },
+  {
+    "id": 239,
+    "content": "You are capable of creating the life you want.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-07-27"
+  },
+  {
+    "id": 240,
+    "content": "Be gentle with yourself on hard days.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-07-28"
+  },
+  {
+    "id": 241,
+    "content": "Your mental health is a priority, not a luxury.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-07-29"
+  },
+  {
+    "id": 242,
+    "content": "You have already overcome so much.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-07-30"
+  },
+  {
+    "id": 243,
+    "content": "Today, choose yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-07-31"
+  },
+  {
+    "id": 244,
+    "content": "You are not broken. You are healing.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-08-01"
+  },
+  {
+    "id": 245,
+    "content": "Your story is not over yet.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-08-02"
+  },
+  {
+    "id": 246,
+    "content": "Be patient. Great things take time.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-08-03"
+  },
+  {
+    "id": 247,
+    "content": "You are worthy of the space you take up.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-08-04"
+  },
+  {
+    "id": 248,
+    "content": "Your feelings are valid. All of them.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-08-05"
+  },
+  {
+    "id": 249,
+    "content": "You deserve to be celebrated.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-08-06"
+  },
+  {
+    "id": 250,
+    "content": "Progress is not linear, and that's okay.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-08-07"
+  },
+  {
+    "id": 251,
+    "content": "You are doing better than you think.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-08-08"
+  },
+  {
+    "id": 252,
+    "content": "Your potential is infinite.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-08-09"
+  },
+  {
+    "id": 253,
+    "content": "Be kind to yourself today.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-08-10"
+  },
+  {
+    "id": 254,
+    "content": "You are enough.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-08-11"
+  },
+  {
+    "id": 255,
+    "content": "You are capable of amazing things. Take one small step today.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-08-12"
+  },
+  {
+    "id": 256,
+    "content": "Self-care is not selfish. It's the most loving thing you can do for yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-08-13"
+  },
+  {
+    "id": 257,
+    "content": "Your struggles make you stronger. Every challenge is a lesson in disguise.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-08-14"
+  },
+  {
+    "id": 258,
+    "content": "Breathe. You are exactly where you need to be right now.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-08-15"
+  },
+  {
+    "id": 259,
+    "content": "Progress, not perfection. Every small win counts.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-08-16"
+  },
+  {
+    "id": 260,
+    "content": "You deserve kindness—especially from yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-08-17"
+  },
+  {
+    "id": 261,
+    "content": "Today is a chance to choose what makes you happy.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-08-18"
+  },
+  {
+    "id": 262,
+    "content": "Your feelings are valid. Honor them without judgment.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-08-19"
+  },
+  {
+    "id": 263,
+    "content": "You are stronger than you think.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-08-20"
+  },
+  {
+    "id": 264,
+    "content": "Take care of your mind. It carries you through everything.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-08-21"
+  },
+  {
+    "id": 265,
+    "content": "Small progress is still progress. Be proud.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-08-22"
+  },
+  {
+    "id": 266,
+    "content": "You have survived every difficult day so far.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-08-23"
+  },
+  {
+    "id": 267,
+    "content": "Your worth is not determined by your productivity.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-08-24"
+  },
+  {
+    "id": 268,
+    "content": "Be patient with yourself. Growth takes time.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-08-25"
+  },
+  {
+    "id": 269,
+    "content": "You are allowed to rest. You are allowed to slow down.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-08-26"
+  },
+  {
+    "id": 270,
+    "content": "Your past does not define your future.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-08-27"
+  },
+  {
+    "id": 271,
+    "content": "Embrace your uniqueness. The world needs your gifts.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-08-28"
+  },
+  {
+    "id": 272,
+    "content": "You are enough, just as you are.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-08-29"
+  },
+  {
+    "id": 273,
+    "content": "Every setback is a setup for a comeback.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-08-30"
+  },
+  {
+    "id": 274,
+    "content": "Your mental health matters. Prioritize it.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-08-31"
+  },
+  {
+    "id": 275,
+    "content": "You are not alone in this. Reach out when you need help.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-09-01"
+  },
+  {
+    "id": 276,
+    "content": "Today, choose compassion—for others and yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-09-02"
+  },
+  {
+    "id": 277,
+    "content": "You have the power to change your story.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-09-03"
+  },
+  {
+    "id": 278,
+    "content": "Rest is productive. Your body and mind need it.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-09-04"
+  },
+  {
+    "id": 279,
+    "content": "You are deserving of love, especially your own.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-09-05"
+  },
+  {
+    "id": 280,
+    "content": "Focus on what you can control. Let go of the rest.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-09-06"
+  },
+  {
+    "id": 281,
+    "content": "Your potential is limitless.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-09-07"
+  },
+  {
+    "id": 282,
+    "content": "Be kind to your future self.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-09-08"
+  },
+  {
+    "id": 283,
+    "content": "You are a work in progress, and that's beautiful.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-09-09"
+  },
+  {
+    "id": 284,
+    "content": "Your voice matters. Speak your truth.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": 285,
+    "content": "You are braver than you believe.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-09-11"
+  },
+  {
+    "id": 286,
+    "content": "Every day is a fresh start.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-09-12"
+  },
+  {
+    "id": 287,
+    "content": "You deserve to be happy.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-09-13"
+  },
+  {
+    "id": 288,
+    "content": "Trust yourself. You know what you need.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-09-14"
+  },
+  {
+    "id": 289,
+    "content": "Your dreams are worth pursuing.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-09-15"
+  },
+  {
+    "id": 290,
+    "content": "You are capable of creating the life you want.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-09-16"
+  },
+  {
+    "id": 291,
+    "content": "Be gentle with yourself on hard days.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-09-17"
+  },
+  {
+    "id": 292,
+    "content": "Your mental health is a priority, not a luxury.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-09-18"
+  },
+  {
+    "id": 293,
+    "content": "You have already overcome so much.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-09-19"
+  },
+  {
+    "id": 294,
+    "content": "Today, choose yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-09-20"
+  },
+  {
+    "id": 295,
+    "content": "You are not broken. You are healing.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-09-21"
+  },
+  {
+    "id": 296,
+    "content": "Your story is not over yet.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-09-22"
+  },
+  {
+    "id": 297,
+    "content": "Be patient. Great things take time.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-09-23"
+  },
+  {
+    "id": 298,
+    "content": "You are worthy of the space you take up.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-09-24"
+  },
+  {
+    "id": 299,
+    "content": "Your feelings are valid. All of them.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-09-25"
+  },
+  {
+    "id": 300,
+    "content": "You deserve to be celebrated.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-09-26"
+  },
+  {
+    "id": 301,
+    "content": "Progress is not linear, and that's okay.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-09-27"
+  },
+  {
+    "id": 302,
+    "content": "You are doing better than you think.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-09-28"
+  },
+  {
+    "id": 303,
+    "content": "Your potential is infinite.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-09-29"
+  },
+  {
+    "id": 304,
+    "content": "Be kind to yourself today.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-09-30"
+  },
+  {
+    "id": 305,
+    "content": "You are enough.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-10-01"
+  },
+  {
+    "id": 306,
+    "content": "You are capable of amazing things. Take one small step today.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-10-02"
+  },
+  {
+    "id": 307,
+    "content": "Self-care is not selfish. It's the most loving thing you can do for yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-10-03"
+  },
+  {
+    "id": 308,
+    "content": "Your struggles make you stronger. Every challenge is a lesson in disguise.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-10-04"
+  },
+  {
+    "id": 309,
+    "content": "Breathe. You are exactly where you need to be right now.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-10-05"
+  },
+  {
+    "id": 310,
+    "content": "Progress, not perfection. Every small win counts.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-10-06"
+  },
+  {
+    "id": 311,
+    "content": "You deserve kindness—especially from yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-10-07"
+  },
+  {
+    "id": 312,
+    "content": "Today is a chance to choose what makes you happy.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-10-08"
+  },
+  {
+    "id": 313,
+    "content": "Your feelings are valid. Honor them without judgment.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-10-09"
+  },
+  {
+    "id": 314,
+    "content": "You are stronger than you think.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-10-10"
+  },
+  {
+    "id": 315,
+    "content": "Take care of your mind. It carries you through everything.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-10-11"
+  },
+  {
+    "id": 316,
+    "content": "Small progress is still progress. Be proud.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-10-12"
+  },
+  {
+    "id": 317,
+    "content": "You have survived every difficult day so far.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-10-13"
+  },
+  {
+    "id": 318,
+    "content": "Your worth is not determined by your productivity.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-10-14"
+  },
+  {
+    "id": 319,
+    "content": "Be patient with yourself. Growth takes time.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-10-15"
+  },
+  {
+    "id": 320,
+    "content": "You are allowed to rest. You are allowed to slow down.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-10-16"
+  },
+  {
+    "id": 321,
+    "content": "Your past does not define your future.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-10-17"
+  },
+  {
+    "id": 322,
+    "content": "Embrace your uniqueness. The world needs your gifts.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-10-18"
+  },
+  {
+    "id": 323,
+    "content": "You are enough, just as you are.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-10-19"
+  },
+  {
+    "id": 324,
+    "content": "Every setback is a setup for a comeback.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-10-20"
+  },
+  {
+    "id": 325,
+    "content": "Your mental health matters. Prioritize it.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-10-21"
+  },
+  {
+    "id": 326,
+    "content": "You are not alone in this. Reach out when you need help.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-10-22"
+  },
+  {
+    "id": 327,
+    "content": "Today, choose compassion—for others and yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-10-23"
+  },
+  {
+    "id": 328,
+    "content": "You have the power to change your story.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-10-24"
+  },
+  {
+    "id": 329,
+    "content": "Rest is productive. Your body and mind need it.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-10-25"
+  },
+  {
+    "id": 330,
+    "content": "You are deserving of love, especially your own.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-10-26"
+  },
+  {
+    "id": 331,
+    "content": "Focus on what you can control. Let go of the rest.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-10-27"
+  },
+  {
+    "id": 332,
+    "content": "Your potential is limitless.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-10-28"
+  },
+  {
+    "id": 333,
+    "content": "Be kind to your future self.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-10-29"
+  },
+  {
+    "id": 334,
+    "content": "You are a work in progress, and that's beautiful.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-10-30"
+  },
+  {
+    "id": 335,
+    "content": "Your voice matters. Speak your truth.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-10-31"
+  },
+  {
+    "id": 336,
+    "content": "You are braver than you believe.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-11-01"
+  },
+  {
+    "id": 337,
+    "content": "Every day is a fresh start.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-11-02"
+  },
+  {
+    "id": 338,
+    "content": "You deserve to be happy.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-11-03"
+  },
+  {
+    "id": 339,
+    "content": "Trust yourself. You know what you need.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-11-04"
+  },
+  {
+    "id": 340,
+    "content": "Your dreams are worth pursuing.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": 341,
+    "content": "You are capable of creating the life you want.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-11-06"
+  },
+  {
+    "id": 342,
+    "content": "Be gentle with yourself on hard days.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": 343,
+    "content": "Your mental health is a priority, not a luxury.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-11-08"
+  },
+  {
+    "id": 344,
+    "content": "You have already overcome so much.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-11-09"
+  },
+  {
+    "id": 345,
+    "content": "Today, choose yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-11-10"
+  },
+  {
+    "id": 346,
+    "content": "You are not broken. You are healing.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-11-11"
+  },
+  {
+    "id": 347,
+    "content": "Your story is not over yet.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-11-12"
+  },
+  {
+    "id": 348,
+    "content": "Be patient. Great things take time.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-11-13"
+  },
+  {
+    "id": 349,
+    "content": "You are worthy of the space you take up.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": 350,
+    "content": "Your feelings are valid. All of them.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": 351,
+    "content": "You deserve to be celebrated.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": 352,
+    "content": "Progress is not linear, and that's okay.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": 353,
+    "content": "You are doing better than you think.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-11-18"
+  },
+  {
+    "id": 354,
+    "content": "Your potential is infinite.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-11-19"
+  },
+  {
+    "id": 355,
+    "content": "Be kind to yourself today.",
+    "author": "Daily Life Suggestions",
+    "theme": "mindfulness",
+    "createdAt": "2026-11-20"
+  },
+  {
+    "id": 356,
+    "content": "You are enough.",
+    "author": "Daily Life Suggestions",
+    "theme": "hope",
+    "createdAt": "2026-11-21"
+  },
+  {
+    "id": 357,
+    "content": "You are capable of amazing things. Take one small step today.",
+    "author": "Daily Life Suggestions",
+    "theme": "strength",
+    "createdAt": "2026-11-22"
+  },
+  {
+    "id": 358,
+    "content": "Self-care is not selfish. It's the most loving thing you can do for yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "acceptance",
+    "createdAt": "2026-11-23"
+  },
+  {
+    "id": 359,
+    "content": "Your struggles make you stronger. Every challenge is a lesson in disguise.",
+    "author": "Daily Life Suggestions",
+    "theme": "peace",
+    "createdAt": "2026-11-24"
+  },
+  {
+    "id": 360,
+    "content": "Breathe. You are exactly where you need to be right now.",
+    "author": "Daily Life Suggestions",
+    "theme": "self-care",
+    "createdAt": "2026-11-25"
+  },
+  {
+    "id": 361,
+    "content": "Progress, not perfection. Every small win counts.",
+    "author": "Daily Life Suggestions",
+    "theme": "resilience",
+    "createdAt": "2026-11-26"
+  },
+  {
+    "id": 362,
+    "content": "You deserve kindness—especially from yourself.",
+    "author": "Daily Life Suggestions",
+    "theme": "gratitude",
+    "createdAt": "2026-11-27"
+  },
+  {
+    "id": 363,
+    "content": "Today is a chance to choose what makes you happy.",
+    "author": "Daily Life Suggestions",
+    "theme": "growth",
+    "createdAt": "2026-11-28"
+  },
+  {
+    "id": 364,
+    "content": "Your feelings are valid. Honor them without judgment.",
+    "author": "Daily Life Suggestions",
+    "theme": "courage",
+    "createdAt": "2026-11-29"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "nuxt",
+  "nodejs": "20.x",
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
+  },
+  "env": {
+    "VITE_START_DATE": "@vite_start_date",
+    "VITE_APP_NAME": "Daily Life Suggestions"
+  }
+}

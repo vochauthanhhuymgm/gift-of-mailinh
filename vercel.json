@@ -2,7 +2,6 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "nuxt",
-  "nodejs": "20.x",
   "git": {
     "deploymentEnabled": {
       "main": true

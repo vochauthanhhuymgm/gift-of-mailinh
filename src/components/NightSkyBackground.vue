@@ -12,7 +12,7 @@
     inset: 0;
     width: 100%;
     height: 100vh;
-    background-image: url('~/assets/img/dark-night-background.jpg');
+    background-image: url('/img/dark-night-background.jpg');
     background-size: cover;
     background-position: center;
     z-index: -1;

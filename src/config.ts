@@ -41,6 +41,8 @@ export const appConfig = {
 
   // Timezone handling
   USE_LOCAL_TIMEZONE: true, // Always use device local timezone
+
+  BACKGROUND_IMAGE_PATH: '/img/dark-night-background.jpg',
 };
 
 export type MessageTheme = (typeof appConfig.MESSAGE_THEMES)[number];

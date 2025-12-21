@@ -10,11 +10,8 @@ export default defineNuxtConfig({
     },
   },
   // Static generation for Vercel deployment
-  nitro: {
-    output: {
-      publicDir: 'dist',
-    },
-  },
+  // Keep Nitro's publicDir as default so files from `/public` are preserved
+  // and copied into the final build. Avoid overriding `publicDir` to `dist`.
   // Build configuration for static site
   ssr: true,
   runtimeConfig: {

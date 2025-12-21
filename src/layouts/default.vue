@@ -15,7 +15,6 @@
 
 <script setup lang="ts">
   import NightSkyBackground from '~/components/NightSkyBackground.vue';
-  import Footer from '~/components/Footer.vue';
   // Default layout for all pages
   // Minimal chrome using Vuetify grid system to focus on message content
 </script>

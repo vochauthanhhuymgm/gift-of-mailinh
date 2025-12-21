@@ -2,7 +2,7 @@
   <div class="home-page">
     <!-- Coming Soon Screen (before startDate) -->
     <div v-if="state === 'COMING_SOON'" class="coming-soon-screen">
-      <div class="coming-soon-content">
+      <!-- <div class="coming-soon-content">
         <h1 class="headline">Get Ready</h1>
         <p class="coming-soon-message subtext">Your 365-day emotional healing journey begins on</p>
         <p class="coming-soon-date">{{ formatDate(dateLock.getStartDate()) }}</p>
@@ -10,7 +10,8 @@
         <p class="coming-soon-subtext subtext">
           Prepare yourself for daily inspiration, encouragement, and emotional support.
         </p>
-      </div>
+      </div> -->
+      <coming-soon />
     </div>
 
     <!-- Completed Screen (after day 365) -->
@@ -73,7 +74,7 @@
   import { useDateLock } from '~/composables/useDateLock';
   import { getMillisUntilNextUnlock, formatDateISO } from '~/utils/dateCalculation';
   import MessageDisplay from '~/components/MessageDisplay.vue';
-
+  import ComingSoon from '~/pages/coming-soon.vue';
   // Composables
   const messageIndex = useMessageIndex();
   const dateLock = useDateLock();
@@ -224,13 +225,26 @@
 
   .coming-soon-content,
   .completed-content {
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    background-color: rgba(8, 12, 24, 0.35);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: var(--spacing-xl);
-    border-radius: 1.5rem; /* 2xl */
+    border-radius: 1.75rem;
     max-width: 90%;
-    width: 640px; /* max-w-2xl */
+    width: 640px;
+    box-shadow: 0 25px 70px rgba(3, 5, 9, 0.65);
+    overflow: hidden;
+  }
+
+  .coming-soon-content::before,
+  .completed-content::before {
+    content: '';
+    position: absolute;
+    inset: -30px -20px auto -20px;
+    height: 60%;
+    background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.28), transparent 70%);
+    pointer-events: none;
   }
 
   .coming-soon-content h1 {
@@ -300,7 +314,27 @@
     font-weight: 600;
     color: #ffffff;
     font-family: 'Monaco', 'Courier New', monospace;
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    text-shadow:
+      0 0 12px rgba(255, 255, 255, 0.9),
+      0 0 30px rgba(169, 236, 255, 0.6),
+      0 0 45px rgba(255, 255, 255, 0.35);
+    animation: pulse-glow 2s infinite;
+  }
+
+  @keyframes pulse-glow {
+    0%,
+    100% {
+      text-shadow:
+        0 0 12px rgba(255, 255, 255, 0.9),
+        0 0 30px rgba(169, 236, 255, 0.6),
+        0 0 45px rgba(255, 255, 255, 0.35);
+    }
+    50% {
+      text-shadow:
+        0 0 18px rgba(255, 255, 255, 1),
+        0 0 40px rgba(169, 236, 255, 0.8),
+        0 0 60px rgba(255, 255, 255, 0.5);
+    }
   }
 
   /* Loading Screen */

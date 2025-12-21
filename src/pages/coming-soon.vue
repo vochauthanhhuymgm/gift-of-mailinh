@@ -1,31 +1,20 @@
 <template>
   <div class="coming-soon-wrapper">
     <div class="coming-soon-container">
-      <h1 class="coming-soon-title">Get Ready</h1>
-      <p class="coming-soon-subtitle">Your 365-day emotional healing journey is coming</p>
+      <h1 class="coming-soon-title">A Gift for You - Mai Linh</h1>
+      <p class="coming-soon-subtitle">A 365-day journey of gentle reminders, made with you in mind.</p>
 
       <div class="coming-soon-date-section">
-        <p class="coming-soon-date-label">Starting:</p>
+        <p class="coming-soon-date-label">It all begins:</p>
         <p class="coming-soon-date">{{ startDate }}</p>
         <p class="coming-soon-time">at 6:00 AM local time</p>
       </div>
 
       <p class="coming-soon-description">
-        Prepare yourself for a year of daily inspiration, encouragement, and emotional support. This journey is designed to help you start each day with calm, warmth, and purpose.
+        I wanted to create something special, just for you. A small, quiet space for a moment of peace and reflection each day. I hope it brings a little bit of warmth and a smile to your face.
       </p>
 
-      <div class="coming-soon-features">
-        <h2>What to Expect</h2>
-        <ul>
-          <li>One daily message unlocked each morning at 6:00 AM</li>
-          <li>365 carefully curated suggestions for emotional healing</li>
-          <li>A calm, distraction-free experience</li>
-          <li>Completely private—no data collection</li>
-          <li>Offline-capable after first load</li>
-        </ul>
-      </div>
-
-      <p class="coming-soon-cta">Save this page to start your journey on day one.</p>
+      <p class="coming-soon-cta">I can't wait for you to see it.</p>
     </div>
   </div>
 </template>
@@ -33,7 +22,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useDateLock } from '~/composables/useDateLock';
-import { formatDateISO } from '~/utils/dateCalculation';
 
 const dateLock = useDateLock();
 
@@ -47,15 +35,6 @@ const startDate = computed(() => {
   }).format(date);
 });
 
-useHead({
-  title: 'Coming Soon - Daily Life Suggestions',
-  meta: [
-    {
-      name: 'description',
-      content: 'Your 365-day emotional healing journey is coming soon. Get ready to start your daily practice.',
-    },
-  ],
-});
 </script>
 
 <style scoped>
@@ -71,19 +50,33 @@ useHead({
 
 .coming-soon-container {
   width: 100%;
-  max-width: 600px;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.15) 100%);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 700px; /* Increased max-width for better layout */
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   padding: var(--spacing-xl);
-  border-radius: var(--border-radius-lg);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 1.5rem !important; /* Match MessageDisplay */
+  box-shadow: 0 25px 70px rgba(3, 5, 9, 0.65);
   text-align: center;
+  overflow: hidden; /* To contain the ::before pseudo-element */
+}
+
+.coming-soon-container::before {
+  content: '';
+  position: absolute;
+  inset: -40px -20px auto -20px;
+  height: 65%;
+  background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.2), transparent 70%);
+  pointer-events: none;
+  opacity: 0.9;
 }
 
 .coming-soon-title {
-  font-size: var(--font-size-3xl);
-  color: #a78bfa;
+  font-family: var(--font-family-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #f7fbff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
   margin-bottom: var(--spacing-md);
   font-weight: 600;
 }
@@ -92,40 +85,39 @@ useHead({
   font-size: var(--font-size-lg);
   color: #e0e7ff;
   margin-bottom: var(--spacing-xl);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .coming-soon-date-section {
-  background-color: var(--color-border);
   padding: var(--spacing-lg);
-  border-radius: var(--border-radius-md);
   margin-bottom: var(--spacing-xl);
 }
 
-.coming-soon-date-label {
+/* .coming-soon-date-label {
   font-size: var(--font-size-sm);
-  color: var(--color-text-light);
+  color: rgba(212, 175, 55, 0.8);
   margin-bottom: var(--spacing-sm);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-}
+} */
 
 .coming-soon-date {
   font-size: var(--font-size-2xl);
-  color: var(--color-primary);
+  color: #d4af37; /* Gold color */
   font-weight: 600;
   margin-bottom: var(--spacing-sm);
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
 }
 
 .coming-soon-time {
   font-size: var(--font-size-sm);
-  color: var(--color-text-light);
+  color: #e0e7ff;
 }
 
 .coming-soon-description {
   font-size: var(--font-size-base);
   line-height: var(--line-height-relaxed);
-  color: var(--color-text);
+  color: #e0e7ff;
   margin-bottom: var(--spacing-xl);
 }
 
@@ -136,20 +128,23 @@ useHead({
 
 .coming-soon-features h2 {
   font-size: var(--font-size-lg);
-  color: var(--color-text);
+  color: #f7fbff;
   margin-bottom: var(--spacing-md);
   text-align: center;
+  font-weight: 500;
 }
 
 .coming-soon-features ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: inline-block; /* Center the list block */
+  text-align: left;
 }
 
 .coming-soon-features li {
   font-size: var(--font-size-sm);
-  color: var(--color-text);
+  color: #e0e7ff;
   padding: var(--spacing-sm) 0;
   padding-left: var(--spacing-lg);
   position: relative;
@@ -158,17 +153,20 @@ useHead({
 }
 
 .coming-soon-features li::before {
-  content: '✓';
+  content: '✦'; /* Changed from checkmark to a star */
   position: absolute;
   left: 0;
-  color: var(--color-primary);
+  color: #d4af37; /* Gold color */
   font-weight: 600;
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.7);
 }
 
 .coming-soon-cta {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-light);
+  font-size: var(--font-size-base); /* Larger CTA */
+  color: #f7fbff;
   font-style: italic;
+  font-family: var(--font-family-serif);
+  letter-spacing: 0.05em;
 }
 
 /* Animation */

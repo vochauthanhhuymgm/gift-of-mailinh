@@ -19,7 +19,7 @@ export default defineNuxtConfig({
   ssr: true,
   runtimeConfig: {
     public: {
-      startDate: process.env.VITE_START_DATE || '2025-12-16',
+      startDate: process.env.VITE_START_DATE || '2025-12-22',
       appName: process.env.VITE_APP_NAME || 'Daily Life Suggestions',
       unlockedHour: parseInt(process.env.VITE_UNLOCKED_HOUR || '6'),
       unlockedMinute: parseInt(process.env.VITE_UNLOCKED_MINUTE || '0'),

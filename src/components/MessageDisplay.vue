@@ -42,7 +42,6 @@
         <v-chip
           v-if="dayIndex >= 0 && dayIndex < 365"
           class="day-counter mt-6"
-          color="#d4af37"
           variant="tonal"
           size="small"
         >
@@ -81,26 +80,39 @@
   }
 
   .message-card {
-    background-color: transparent;
-    backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 1.5rem !important; /* 2xl */
-    box-shadow: 0 0 40px rgba(255, 255, 255, 0.05);
+    box-shadow: 0 25px 70px rgba(3, 5, 9, 0.65);
+    overflow: hidden;
+  }
+
+  .message-card::before {
+    content: '';
+    position: absolute;
+    inset: -40px -20px auto -20px;
+    height: 65%;
+    background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.2), transparent 70%);
+    pointer-events: none;
+    opacity: 0.9;
+  }
+
+  .message-content {
+    position: relative;
+    z-index: 1;
   }
 
   .message-text {
     font-family: var(--font-family-serif);
-    font-size: var(--font-size-xl);
-    color: #ffffff;
-    line-height: var(--line-height-relaxed);
-    letter-spacing: 0.5px;
-  }
-
-  .message-text {
-    line-height: 1.75 !important;
-    color: #ffffff;
+    font-size: clamp(1.5rem, 2vw, 2.1rem);
+    color: #f7fbff;
+    line-height: 1.85;
+    letter-spacing: 0.08em;
     max-width: 100%;
     word-wrap: break-word;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
   }
 
   .message-author {
@@ -109,6 +121,10 @@
 
   .day-counter {
     margin-top: 1.5rem;
+    background-color: rgba(212, 175, 55, 0.18) !important;
+    color: #d4af37 !important;
+    border: 1px solid rgba(212, 175, 55, 0.4) !important;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.25);
   }
 
   .message-loading {

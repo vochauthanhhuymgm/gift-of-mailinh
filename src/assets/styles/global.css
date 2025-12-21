@@ -1,19 +1,21 @@
-/**
- * Global styles for Daily Life-Healing Suggestions app
- * Calm, accessible, mobile-first aesthetic
- */
-
 /* CSS Variables for theming */
 :root {
-  /* Color palette - dark, calming colors inspired by Sleep Cycle */
-  --color-primary: #8e7dff; /* Brighter purple for accents on dark bg */
-  --color-secondary: #89cff0; /* Powder blue */
-  --color-accent: #ffd4a3; /* Warm peach */
-  --color-text: #e5e5e5; /* Light gray for readability */
-  --color-text-light: #b0b0b0; /* Lighter gray for secondary text */
-  --color-background: linear-gradient(135deg, #1c142b 0%, #3c225e 100%); /* Dark purple gradient */
-  --color-card: rgba(45, 45, 42, 0.5); /* Translucent dark card */
-  --color-border: #3d3d3a; /* Soft border color */
+  /* 
+    New Color Palette: Deep Space Calm
+    A harmonious, dark theme inspired by the tranquility of deep space.
+    - Background: A smooth gradient from deep navy to dark purple.
+    - Primary: A vibrant, yet soft, lavender for focus elements.
+    - Secondary: A gentle cyan for secondary actions and highlights.
+    - Text: Off-white for high readability without being harsh.
+  */
+  --color-primary: #9b8afb; /* Soft Lavender */
+  --color-secondary: #79dcf1; /* Gentle Cyan */
+  --color-accent: #f2c97d; /* Muted Gold (for subtle highlights if needed) */
+  --color-text: #eef2f5; /* Off-white */
+  --color-text-light: #a8b2c2; /* Muted Blue-Gray */
+  --color-background: #111827; /* Dark Navy-Gray as a fallback */
+  --color-card: rgba(31, 41, 55, 0.5); /* Translucent Dark Slate */
+  --color-border: rgba(55, 65, 81, 0.7); /* Soft Slate Border */
 
   /* Typography */
   --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -95,12 +97,7 @@ body {
   font-size: var(--font-size-base);
   line-height: var(--line-height-normal);
   color: var(--color-text);
-  background: linear-gradient(135deg, 
-    #f7f0ff 0%, 
-    #ebf8ff 35%, 
-    #fff5eb 70%, 
-    #fef0ff 100%
-  );
+  background: linear-gradient(160deg, #0b0f2b 0%, #1e1a3e 100%);
   background-attachment: fixed;
   min-height: 100vh;
 }
@@ -197,14 +194,7 @@ textarea:focus,
 select:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(123, 104, 238, 0.1);
-}
-
-/* Contrast ratios - WCAG AA compliant (≥4.5:1 for normal text) */
-body {
-  /* Text on background: approximately 8:1 */
-  color: var(--color-text);
-  background-color: var(--color-background);
+  box-shadow: 0 0 0 3px rgba(155, 138, 251, 0.1);
 }
 
 /* Images */

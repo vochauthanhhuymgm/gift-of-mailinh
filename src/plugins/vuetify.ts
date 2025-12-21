@@ -9,21 +9,21 @@ import { aliases, mdi } from 'vuetify/iconsets/mdi';
 const calmTheme = {
   dark: true, // Set dark theme as default
   colors: {
-    background: '#1a1a2e', // Dark blue-purple from global.css
-    surface: '#2c2c44', // A slightly lighter surface for cards/dialogs
-    primary: '#8e7dff', // Bright lavender from global.css
-    'primary-darken-1': '#7a6ad9',
-    secondary: '#c651cd', // Orchid from global.css
-    'secondary-darken-1': '#ab47b2',
+    background: '#111827', // Dark Navy-Gray, matches body background
+    surface: '#1f2937', // Dark Slate for cards
+    primary: '#9b8afb', // Soft Lavender from global.css
+    'primary-darken-1': '#8170e8',
+    secondary: '#79dcf1', // Gentle Cyan from global.css
+    'secondary-darken-1': '#59cde8',
     error: '#ff5252',
     info: '#2196f3',
     success: '#4caf50',
     warning: '#ffc107',
     // Text colors for readability on dark surfaces
-    'on-background': '#e0e0e0',
+    'on-background': '#eef2f5', // Off-white from global.css
     'on-surface': '#ffffff',
     'on-primary': '#ffffff',
-    'on-secondary': '#ffffff',
+    'on-secondary': '#111827', // Dark text for better contrast on the light secondary color
   },
 };
 

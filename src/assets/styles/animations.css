@@ -1,0 +1,50 @@
+/* src/assets/styles/animations.css */
+
+/*
+  Gentle, slow animations to create a calm and unhurried experience.
+  Durations are set to >= 500ms as per specification SC-005.
+*/
+
+/* Fade-in animation for revealing content */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+/* Fade-in and slide-up animation for a subtle entrance */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.7s ease-out forwards;
+}
+
+/* A slightly faster version for secondary elements */
+.fade-in-up-fast {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Respects user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in,
+  .fade-in-up,
+  .fade-in-up-fast {
+    animation: none;
+  }
+}

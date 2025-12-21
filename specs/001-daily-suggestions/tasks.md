@@ -117,10 +117,10 @@
 ### Implementation for User Story 2
 
 - [x] T036 [P] [US2] Create Vuetify 3 theme configuration in `src/plugins/vuetify.ts` with soft pastel colors, calm palette (inspired by Sleep Cycle per plan.md), dark mode option respecting system preference
-- [ ] T037 [P] [US2] Create `src/assets/styles/typography.css` with readable font sizes (≥16px base), line-height ≥1.5, letter-spacing for readability per spec.md FR-007 WCAG AA
-- [ ] T038 [P] [US2] Create CSS modules or global styles in `src/assets/styles/animations.css` with gentle fade-in, slide-up, and other transitions ≥500ms duration, conditional on `prefers-reduced-motion` media query per spec.md SC-005/FR-006
+- [x] T037 [P] [US2] Create `src/assets/styles/typography.css` with readable font sizes (≥16px base), line-height ≥1.5, letter-spacing for readability per spec.md FR-007 WCAG AA
+- [x] T038 [P] [US2] Create CSS modules or global styles in `src/assets/styles/animations.css` with gentle fade-in, slide-up, and other transitions ≥500ms duration, conditional on `prefers-reduced-motion` media query per spec.md SC-005/FR-006
 - [x] T039 [US2] Update `src/layouts/default.vue` with calm background, subtle gradients, whitespace-rich design, zero jarring colors per spec.md FR-005 (minimal, calm visual context)
-- [ ] T040 [P] [US2] Create `src/components/Header.vue` (if needed) and `src/components/Footer.vue` with minimal branding, optional support email/privacy links per plan.md, soft colors, accessible links
+- [x] T040 [P] [US2] Create `src/components/Header.vue` (if needed) and `src/components/Footer.vue` with minimal branding, optional support email/privacy links per plan.md, soft colors, accessible links
 - [ ] T041 [P] [US2] Implement color contrast validation: ensure all text on backgrounds has ≥4.5:1 contrast ratio (automated check in build or CI per spec.md SC-004)
 - [ ] T042 [US2] Conduct user feedback session: 5+ female student testers rate emotional tone on 5-point scale in user testing feedback form, document results targeting mean ≥4.0/5 per spec.md SC-006
 - [ ] T043 [P] [US2] Create documentation `src/STYLING.md` explaining color palette, typography choices, animation philosophy, how to respect reduced-motion (developer guide per constitution.md code style)

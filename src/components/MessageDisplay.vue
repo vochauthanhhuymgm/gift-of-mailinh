@@ -1,13 +1,9 @@
 <template>
   <article class="message-display" role="main">
-    <v-card
-      class="message-card elevation-4"
-      rounded="xl"
-      :loading="isLoading"
-    >
+    <v-card class="message-card elevation-4" rounded="xl" :loading="isLoading">
       <v-card-text class="message-content pa-8">
         <!-- Message text with semantic markup -->
-        <p class="message-text text-h5 font-weight-medium" v-if="message">
+        <p class="message-text" v-if="message">
           {{ message.content }}
         </p>
 
@@ -35,7 +31,10 @@
         </v-alert>
 
         <!-- Author attribution if provided -->
-        <p v-if="message?.author" class="message-author text-body-2 text-medium-emphasis font-italic mt-6">
+        <p
+          v-if="message?.author"
+          class="message-author text-body-2 text-medium-emphasis font-italic mt-6"
+        >
           — {{ message.author }}
         </p>
 
@@ -43,7 +42,7 @@
         <v-chip
           v-if="dayIndex >= 0 && dayIndex < 365"
           class="day-counter mt-6"
-          color="primary"
+          color="#d4af37"
           variant="tonal"
           size="small"
         >
@@ -55,116 +54,111 @@
 </template>
 
 <script setup lang="ts" name="MessageDisplay">
-import { computed } from 'vue';
-import type { Message } from '~/types';
+  import { computed } from 'vue';
+  import type { Message } from '~/types';
 
-interface Props {
-  message: Message | null;
-  dayIndex?: number;
-  isLoading?: boolean;
-  error?: string | null;
-}
+  interface Props {
+    message: Message | null;
+    dayIndex?: number;
+    isLoading?: boolean;
+    error?: string | null;
+  }
 
-const props = withDefaults(defineProps<Props>(), {
-  dayIndex: -1,
-  isLoading: false,
-  error: null,
-});
+  const props = withDefaults(defineProps<Props>(), {
+    dayIndex: -1,
+    isLoading: false,
+    error: null,
+  });
 
-const dayIndex = computed(() => props.dayIndex);
+  const dayIndex = computed(() => props.dayIndex);
 </script>
 
 <style scoped>
-.message-display {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.message-card {
-  background: linear-gradient(135deg, 
-    rgba(247, 240, 255, 0.8) 0%,
-    rgba(235, 248, 255, 0.8) 50%,
-    rgba(255, 245, 235, 0.8) 100%
-  );
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 32px rgba(123, 104, 238, 0.15) !important;
-}
-
-.message-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 300px;
-  text-align: center;
-}
-
-.message-text {
-  line-height: 1.75 !important;
-  color: #ffffff;
-  max-width: 100%;
-  word-wrap: break-word;
-}
-
-.message-author {
-  margin-top: 1.5rem;
-}
-
-.day-counter {
-  margin-top: 1.5rem;
-}
-
-.message-loading {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 200px;
-}
-
-.message-error {
-  width: 100%;
-}
-
-/* Animation for message reveal */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
+  .message-display {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-.message-card {
-  animation: fadeIn 0.6s ease-out;
-}
-
-@media (prefers-reduced-motion: reduce) {
   .message-card {
-    animation: none;
+    background-color: transparent;
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.5rem !important; /* 2xl */
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.05);
   }
-}
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .message-content {
-    min-height: 250px;
-  }
-  
   .message-text {
-    font-size: 1.25rem !important;
+    font-family: var(--font-family-serif);
+    font-size: var(--font-size-xl);
+    color: #ffffff;
+    line-height: var(--line-height-relaxed);
+    letter-spacing: 0.5px;
   }
-}
 
-@media (max-width: 480px) {
   .message-text {
-    font-size: 1.125rem !important;
+    line-height: 1.75 !important;
+    color: #ffffff;
+    max-width: 100%;
+    word-wrap: break-word;
   }
-}
+
+  .message-author {
+    margin-top: 1.5rem;
+  }
+
+  .day-counter {
+    margin-top: 1.5rem;
+  }
+
+  .message-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+  }
+
+  .message-error {
+    width: 100%;
+  }
+
+  /* Animation for message reveal */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .message-card {
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .message-card {
+      animation: none;
+    }
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .message-content {
+      min-height: 250px;
+    }
+
+    .message-text {
+      font-size: 1.25rem !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .message-text {
+      font-size: 1.125rem !important;
+    }
+  }
 </style>
-

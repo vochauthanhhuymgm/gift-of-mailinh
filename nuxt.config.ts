@@ -35,6 +35,8 @@ export default defineNuxtConfig({
   // CSS and styling
   css: [
     '@/assets/styles/global.css',
+    '@/assets/styles/typography.css',
+    '@/assets/styles/animations.css', // Add animation styles
     'vuetify/styles',
     '@mdi/font/css/materialdesignicons.css',
   ],

@@ -78,7 +78,6 @@
   // Composables
   const messageIndex = useMessageIndex();
   const dateLock = useDateLock();
-
   // State
   const currentMessage = ref<Message | null>(null);
   const state = ref<JourneyState>('COMING_SOON');
